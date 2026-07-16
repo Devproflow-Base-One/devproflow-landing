@@ -8,22 +8,21 @@ const stats = [
   { value: "12+", label: "Products Built", sub: "Commercial & enterprise" },
   { value: "300+", label: "Browser Extensions", sub: "8 categories, production-ready" },
   { value: "8", label: "Industries Served", sub: "Fintech to Lifestyle" },
-  { value: "∞", label: "Campaign Intelligence", sub: "Global, self-optimizing" },
+  { value: "∞", label: "Global Reach", sub: "Multi-region, scalable" },
 ];
 
 const marqueeItems = [
   "Next.js 15", "React 19", "TypeScript", "FastAPI", "Python", "Node.js 20",
   "PostgreSQL", "Supabase", "Redis", "Docker", "Tailwind CSS", "Vercel",
   "Railway", "Cloudflare", "Polygon", "Electron", "React Native",
-  "Turborepo", "Celery", "Playwright", "Groq", "Cerebras",
-  "Google Gemini", "OpenRouter", "OAuth 2.1", "JWT", "RBAC",
+  "Turborepo", "Playwright", "OAuth 2.1", "JWT", "RBAC",
 ];
 
 const products = [
   {
-    name: "DevFlo AI",
-    tagline: "Unified AI API",
-    description: "Access 33+ AI models with a single API key. OpenAI-compatible format with auto-fallback.",
+    name: "DevFlo",
+    tagline: "Unified API Platform",
+    description: "Access 33+ models with a single API. Compatible format with auto-fallback.",
     icon: "M12 2a3 3 0 00-3 3v2a3 3 0 006 0V5a3 3 0 00-3-3zM5 8h14v11a2 2 0 01-2 2H7a2 2 0 01-2-2V8z",
     status: "Live",
     url: "https://aidevflo.devproflow.com",
@@ -32,7 +31,7 @@ const products = [
   {
     name: "MarktBit",
     tagline: "Crypto + Stocks Signals",
-    description: "Hybrid signal dashboard with AI-powered analysis. Real-time crypto + global stock signals.",
+    description: "Hybrid signal dashboard with smart analysis. Real-time crypto + global stock signals.",
     icon: "M3 3v18h18M7 14l4-4 4 4 6-6",
     status: "90%",
     url: "#",
@@ -50,7 +49,7 @@ const products = [
   {
     name: "Mosquemu",
     tagline: "Digital Mosque Management",
-    description: "Multi-agent AI orchestration with 8 RBAC roles, 14 i18n locales, Xendit + PayPal. Web + mobile.",
+    description: "Complete mosque management with 14 languages, secure payments, and role-based access. Web + mobile.",
     icon: "M12 2L2 12h3v8h14v-8h3L12 2z",
     status: "Production",
     url: "#",
@@ -58,8 +57,8 @@ const products = [
   },
   {
     name: "MusicVerse",
-    tagline: "AI Music Marketplace",
-    description: "Reverse-bidding marketplace with Polygon blockchain copyright vault, AI Sonic DNA auto-tagging.",
+    tagline: "Music Marketplace",
+    description: "Marketplace where producers and engineers connect. Blockchain copyright protection and automatic royalty splits.",
     icon: "M9 18V5l12-2v13M9 9l12-2M9 18a3 3 0 11-6 0 3 3 0 016 0zm12-3a3 3 0 11-6 0 3 3 0 016 0z",
     status: "25%",
     url: "#",
@@ -68,7 +67,7 @@ const products = [
   {
     name: "Automotive Ecosystem",
     tagline: "B2C + B2B Platform",
-    description: "Automotive platform with B2C vehicle marketplace and B2B fleet management. AI-powered marketing.",
+    description: "Automotive platform with B2C vehicle marketplace and B2B fleet management. Smart marketing tools.",
     icon: "M5 11l1.5-4.5h11L19 11M5 11h14v6H5v-6z",
     status: "70%",
     url: "#",
@@ -94,7 +93,7 @@ const products = [
   },
   {
     name: "Auto Life Diary",
-    tagline: "AI-Powered Life Diary",
+    tagline: "Smart Life Diary",
     description: "Automated life logging app. Smart journaling with context awareness and pattern recognition.",
     icon: "M6 2v20l6-4 6 4V2H6z",
     status: "20%",
