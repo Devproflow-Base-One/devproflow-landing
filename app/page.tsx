@@ -105,23 +105,23 @@ const products = [
 
 const capabilities = [
   {
-    title: "AI-Powered Infrastructure",
+    title: "Scalable Infrastructure",
     description: "High-performance infrastructure with seamless failover. Built for enterprise-grade reliability.",
     icon: "M13 10V3L4 14h7v7l9-11h-7z",
   },
   {
-    title: "Multi-Agent Orchestration",
-    description: "A coordinated network of agents working together seamlessly. Scalable workflows across every product.",
+    title: "Seamless Workflows",
+    description: "A coordinated system where every product works together. Scalable workflows across the entire ecosystem.",
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM12 7v5l3 3",
   },
   {
-    title: "Plugin-First Architecture",
+    title: "Modular Architecture",
     description: "A modular architecture with plug-and-play integrations. Add new capabilities in minutes, not months.",
     icon: "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z",
   },
   {
     title: "Enterprise Compliance",
-    description: "OWASP Top 10, GDPR, SOC 2, HIPAA, PCI-DSS, WCAG 2.2, OAuth 2.1, JWT, OpenAPI 3.1.",
+    description: "OWASP Top 10, GDPR, SOC 2, HIPAA, PCI-DSS, WCAG 2.2, OAuth 2.1, JWT.",
     icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
   },
   {
