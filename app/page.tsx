@@ -233,7 +233,7 @@ function Hero() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
           {stats.map((stat) => (
-            <div key={stat.label} className="rounded-lg border border-[#292d30] bg-[#0a0a0c] p-4 text-center hover:border-[#3a3f44] transition-colors">
+            <div key={stat.label} className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
               <div className="text-xs text-[#a1a4a5] mt-1">{stat.label}</div>
               <div className="text-[10px] text-[#464a4d] mt-0.5 font-mono-label">{stat.sub}</div>
