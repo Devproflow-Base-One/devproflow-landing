@@ -320,21 +320,6 @@ export default function AboutPage() {
                 <div className="text-sm text-white">{profile.website.replace("https://", "")}</div>
               </div>
             </a>
-
-            <a
-              href="https://github.com/devproflow"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg border border-[#292d30] bg-[#0a0a0c] p-4 hover:border-[#3a3f44] transition-colors"
-            >
-              <svg className="w-5 h-5 text-iris" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75H22.5m-2.25 0v5.25m-2.25-5.25v5.25m-7.5-5.25h7.5m-7.5 0V3h7.5v3m-7.5 0L3 18.75V21h2.25l9.75-9.75" />
-              </svg>
-              <div>
-                <div className="text-xs text-[#6e727a]">GitHub</div>
-                <div className="text-sm text-white">github.com/devproflow</div>
-              </div>
-            </a>
           </div>
         </Section>
 
