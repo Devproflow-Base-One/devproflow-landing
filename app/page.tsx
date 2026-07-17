@@ -12,10 +12,28 @@ const stats = [
 ];
 
 const marqueeItems = [
-  "Next.js 15", "React 19", "TypeScript", "FastAPI", "Python", "Node.js 20",
-  "PostgreSQL", "Supabase", "Redis", "Docker", "Tailwind CSS", "Vercel",
-  "Railway", "Cloudflare", "Polygon", "Electron", "React Native",
-  "Turborepo", "Playwright", "OAuth 2.1", "JWT", "RBAC",
+  { name: "Next.js", icon: "nextdotjs" },
+  { name: "React", icon: "react" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "FastAPI", icon: null },
+  { name: "Python", icon: "python" },
+  { name: "Node.js", icon: "nodedotjs" },
+  { name: "PostgreSQL", icon: "postgresql" },
+  { name: "Supabase", icon: "supabase" },
+  { name: "Redis", icon: "redis" },
+  { name: "Docker", icon: "docker" },
+  { name: "Tailwind CSS", icon: "tailwindcss" },
+  { name: "Vercel", icon: "vercel" },
+  { name: "Railway", icon: "railway" },
+  { name: "Cloudflare", icon: "cloudflare" },
+  { name: "Polygon", icon: "polygon" },
+  { name: "Electron", icon: "electron" },
+  { name: "React Native", icon: "react" },
+  { name: "Turborepo", icon: "turbo" },
+  { name: "Playwright", icon: "playwright" },
+  { name: "OAuth", icon: "openid" },
+  { name: "JWT", icon: "jsonwebtokens" },
+  { name: "RBAC", icon: null },
 ];
 
 const products = [
@@ -254,7 +272,17 @@ function Marquee() {
       <div className="flex overflow-hidden">
         <div className="flex animate-marquee gap-8 whitespace-nowrap">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
-            <span key={i} className="text-sm font-medium text-[#6e727a] hover:text-[#9281f7] transition-colors cursor-default">{item}</span>
+            <div key={i} className="flex items-center gap-2 text-sm font-medium text-[#6e727a] hover:text-[#9281f7] transition-colors cursor-default">
+              {item.icon ? (
+                <img 
+                  src={`https://cdn.simpleicons.org/${item.icon}/6e727a`} 
+                  alt={item.name}
+                  className="w-5 h-5 hover:fill-[#9281f7] transition-colors"
+                  style={{ fill: 'currentColor' }}
+                />
+              ) : null}
+              <span>{item.name}</span>
+            </div>
           ))}
         </div>
       </div>
