@@ -47,7 +47,7 @@ body {
 body {
   background: var(--void-black);
   color: var(--ink-primary);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
