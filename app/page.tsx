@@ -12,28 +12,28 @@ const stats = [
 ];
 
 const marqueeItems = [
-  { name: "Next.js", icon: "nextdotjs" },
-  { name: "React", icon: "react" },
-  { name: "TypeScript", icon: "typescript" },
-  { name: "FastAPI", icon: null },
-  { name: "Python", icon: "python" },
-  { name: "Node.js", icon: "nodedotjs" },
-  { name: "PostgreSQL", icon: "postgresql" },
-  { name: "Supabase", icon: "supabase" },
-  { name: "Redis", icon: "redis" },
-  { name: "Docker", icon: "docker" },
-  { name: "Tailwind CSS", icon: "tailwindcss" },
-  { name: "Vercel", icon: "vercel" },
-  { name: "Railway", icon: "railway" },
-  { name: "Cloudflare", icon: "cloudflare" },
-  { name: "Polygon", icon: "polygon" },
-  { name: "Electron", icon: "electron" },
-  { name: "React Native", icon: "react" },
-  { name: "Turborepo", icon: "turbo" },
-  { name: "Playwright", icon: "playwright" },
-  { name: "OAuth", icon: "openid" },
-  { name: "JWT", icon: "jsonwebtokens" },
-  { name: "RBAC", icon: null },
+  { name: "Next.js", icon: "nextdotjs", color: "ffffff" },
+  { name: "React", icon: "react", color: "61dafb" },
+  { name: "TypeScript", icon: "typescript", color: "3178c6" },
+  { name: "FastAPI", icon: null, color: null },
+  { name: "Python", icon: "python", color: "3776ab" },
+  { name: "Node.js", icon: "nodedotjs", color: "5fa04e" },
+  { name: "PostgreSQL", icon: "postgresql", color: "4169e1" },
+  { name: "Supabase", icon: "supabase", color: "3ecf8e" },
+  { name: "Redis", icon: "redis", color: "dc381d" },
+  { name: "Docker", icon: "docker", color: "2496ed" },
+  { name: "Tailwind CSS", icon: "tailwindcss", color: "06b6d4" },
+  { name: "Vercel", icon: "vercel", color: "ffffff" },
+  { name: "Railway", icon: "railway", color: "9e2f5e" },
+  { name: "Cloudflare", icon: "cloudflare", color: "f38020" },
+  { name: "Polygon", icon: "polygon", color: "8247e5" },
+  { name: "Electron", icon: "electron", color: "47848f" },
+  { name: "React Native", icon: "react", color: "61dafb" },
+  { name: "Turborepo", icon: "turbo", color: "ef4444" },
+  { name: "Playwright", icon: "playwright", color: "2e2e32" },
+  { name: "OAuth", icon: "openid", color: "f78c40" },
+  { name: "JWT", icon: "jsonwebtokens", color: "fbfbfb" },
+  { name: "RBAC", icon: null, color: null },
 ];
 
 const products = [
@@ -255,18 +255,17 @@ function Marquee() {
     <section className="relative py-10 border-y border-[#292d30] overflow-hidden">
       <div className="text-center text-xs text-[#464a4d] mb-6 font-mono-label uppercase tracking-widest">A single core. Infinite products. Built for what's next.</div>
       <div className="flex overflow-hidden">
-        <div className="flex animate-marquee gap-8 whitespace-nowrap">
+        <div className="flex animate-marquee gap-12 whitespace-nowrap">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
-            <div key={i} className="flex items-center gap-2 text-sm font-medium text-[#6e727a] hover:text-[#9281f7] transition-colors cursor-default">
+            <div key={i} className="flex flex-col items-center gap-2 text-sm font-medium text-[#6e727a] hover:text-[#9281f7] transition-colors cursor-default">
               {item.icon ? (
                 <img 
-                  src={`https://cdn.simpleicons.org/${item.icon}/6e727a`} 
+                  src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} 
                   alt={item.name}
-                  className="w-5 h-5 hover:fill-[#9281f7] transition-colors"
-                  style={{ fill: 'currentColor' }}
+                  className="w-6 h-6 flex-shrink-0"
                 />
               ) : null}
-              <span>{item.name}</span>
+              <span className="text-xs">{item.name}</span>
             </div>
           ))}
         </div>
