@@ -445,11 +445,11 @@ function TechStack() {
           </h2>
           <p className="text-[#a1a4a5] text-sm sm:text-base max-w-2xl mx-auto">A carefully curated stack optimized for performance and scale.</p>
         </div>
-        <div className="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {techStack.map((item, i) => (
-            <div key={item.name} className="flex flex-col items-center gap-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+            <div key={item.name} className="flex flex-col items-center gap-2 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} alt={item.name} className="w-10 h-10 flex-shrink-0" />
+              <img src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} alt={item.name} className="w-14 h-14 flex-shrink-0" />
               <span className="text-xs text-[#6e727a]">{item.name}</span>
             </div>
           ))}
