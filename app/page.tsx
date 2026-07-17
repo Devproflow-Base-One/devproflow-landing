@@ -259,7 +259,7 @@ function Marquee() {
               <img 
                 src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} 
                 alt={item.name}
-                className="w-8 h-8 flex-shrink-0"
+                className="w-5 h-5 flex-shrink-0"
               />
             </div>
           ))}
