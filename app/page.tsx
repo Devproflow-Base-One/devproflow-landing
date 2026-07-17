@@ -15,7 +15,6 @@ const marqueeItems = [
   { name: "Next.js", icon: "nextdotjs", color: "ffffff" },
   { name: "React", icon: "react", color: "61dafb" },
   { name: "TypeScript", icon: "typescript", color: "3178c6" },
-  { name: "FastAPI", icon: null, color: null },
   { name: "Python", icon: "python", color: "3776ab" },
   { name: "Node.js", icon: "nodedotjs", color: "5fa04e" },
   { name: "PostgreSQL", icon: "postgresql", color: "4169e1" },
@@ -33,7 +32,6 @@ const marqueeItems = [
   { name: "Playwright", icon: "playwright", color: "2e2e32" },
   { name: "OAuth", icon: "openid", color: "f78c40" },
   { name: "JWT", icon: "jsonwebtokens", color: "fbfbfb" },
-  { name: "RBAC", icon: null, color: null },
 ];
 
 const products = [
@@ -257,15 +255,12 @@ function Marquee() {
       <div className="flex overflow-hidden">
         <div className="flex animate-marquee gap-12 whitespace-nowrap">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
-            <div key={i} className="flex flex-col items-center gap-2 text-sm font-medium text-[#6e727a] hover:text-[#9281f7] transition-colors cursor-default">
-              {item.icon ? (
-                <img 
-                  src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} 
-                  alt={item.name}
-                  className="w-6 h-6 flex-shrink-0"
-                />
-              ) : null}
-              <span className="text-xs">{item.name}</span>
+            <div key={i} className="flex items-center gap-2 text-sm font-medium text-[#6e727a] hover:text-[#9281f7] transition-colors cursor-default">
+              <img 
+                src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} 
+                alt={item.name}
+                className="w-8 h-8 flex-shrink-0"
+              />
             </div>
           ))}
         </div>
