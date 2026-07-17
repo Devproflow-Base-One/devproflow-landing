@@ -445,7 +445,7 @@ function TechStack() {
           </h2>
           <p className="text-[#a1a4a5] text-sm sm:text-base max-w-2xl mx-auto">A carefully curated stack optimized for performance and scale.</p>
         </div>
-        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-6 gap-12 max-w-6xl mx-auto">
           {techStack.map((item, i) => (
             <div key={item.name} className="flex flex-col items-center gap-2 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
