@@ -149,33 +149,18 @@ const capabilities = [
 ];
 
 const techStack = [
-  {
-    category: "Frontend",
-    items: [
-      { name: "Next.js", icon: "nextdotjs", color: "ffffff" },
-      { name: "React", icon: "react", color: "61dafb" },
-      { name: "TypeScript", icon: "typescript", color: "3178c6" },
-      { name: "Tailwind CSS", icon: "tailwindcss", color: "06b6d4" },
-    ],
-  },
-  {
-    category: "Backend & Data",
-    items: [
-      { name: "Node.js", icon: "nodedotjs", color: "5fa04e" },
-      { name: "Python", icon: "python", color: "3776ab" },
-      { name: "PostgreSQL", icon: "postgresql", color: "4169e1" },
-      { name: "Supabase", icon: "supabase", color: "3ecf8e" },
-    ],
-  },
-  {
-    category: "Cloud & DevOps",
-    items: [
-      { name: "Vercel", icon: "vercel", color: "ffffff" },
-      { name: "Cloudflare", icon: "cloudflare", color: "f38020" },
-      { name: "Docker", icon: "docker", color: "2496ed" },
-      { name: "Git", icon: "git", color: "f05032" },
-    ],
-  },
+  { name: "Next.js", icon: "nextdotjs", color: "ffffff" },
+  { name: "React", icon: "react", color: "61dafb" },
+  { name: "TypeScript", icon: "typescript", color: "3178c6" },
+  { name: "Tailwind CSS", icon: "tailwindcss", color: "06b6d4" },
+  { name: "Node.js", icon: "nodedotjs", color: "5fa04e" },
+  { name: "Python", icon: "python", color: "3776ab" },
+  { name: "PostgreSQL", icon: "postgresql", color: "4169e1" },
+  { name: "Supabase", icon: "supabase", color: "3ecf8e" },
+  { name: "Vercel", icon: "vercel", color: "ffffff" },
+  { name: "Cloudflare", icon: "cloudflare", color: "f38020" },
+  { name: "Docker", icon: "docker", color: "2496ed" },
+  { name: "Git", icon: "git", color: "f05032" },
 ];
 
 function ProductIcon({ path, className }: { path: string; className: string }) {
@@ -461,19 +446,12 @@ function TechStack() {
           </h2>
           <p className="text-[#a1a4a5] text-sm sm:text-base max-w-2xl mx-auto">A carefully curated stack optimized for performance and scale.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
-          {techStack.map((stack, i) => (
-            <div key={stack.category} className="rounded-lg border border-[#292d30] bg-[#0a0a0c] p-5 animate-fade-up" style={{ animationDelay: `${i * 0.06}s` }}>
-              <h3 className="text-sm font-semibold text-[#9281f7] mb-4">{stack.category}</h3>
-              <div className="grid grid-cols-2 gap-2.5">
-                {stack.items.map((item) => (
-                  <div key={item.name} className="flex items-center gap-2.5 rounded-lg bg-white/5 border border-[#292d30] px-3 py-2.5 hover:border-[#3a3f44] transition-colors">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} alt={item.name} className="w-5 h-5 flex-shrink-0" />
-                    <span className="text-xs text-[#a1a4a5]">{item.name}</span>
-                  </div>
-                ))}
-              </div>
+        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+          {techStack.map((item, i) => (
+            <div key={item.name} className="flex items-center gap-3 rounded-lg bg-white/5 border border-[#292d30] px-5 py-3 hover:border-[#3a3f44] transition-colors animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`https://cdn.simpleicons.org/${item.icon}/${item.color}`} alt={item.name} className="w-7 h-7 flex-shrink-0" />
+              <span className="text-sm text-[#a1a4a5]">{item.name}</span>
             </div>
           ))}
         </div>
