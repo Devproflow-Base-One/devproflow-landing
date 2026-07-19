@@ -518,7 +518,7 @@ function Capabilities() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {capabilities.map((cap, i) => (
-            <div key={cap.title} className="group rounded-lg border border-[#292d30] bg-[#0a0a0c] p-6 hover:border-[#3a3f44] transition-all animate-fade-up" style={{ animationDelay: `${i * 0.08}s` }}>
+            <div key={cap.title} className="group p-6 animate-fade-up" style={{ animationDelay: `${i * 0.08}s` }}>
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/5 border border-[#292d30] mb-4">
                 <ProductIcon path={cap.icon} className="w-5 h-5 text-white" />
               </div>
