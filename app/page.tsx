@@ -319,61 +319,98 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* Resend-style 3D Black Glass Cube */}
-        <div className="flex justify-center mb-8 animate-fade-in">
-          <div className="relative w-20 h-20 animate-float-3d">
-            {/* Subtle outer glow */}
-            <div className="absolute inset-0 bg-[#9281f7]/5 rounded-lg blur-2xl animate-glow-pulse" />
-            {/* Main cube - solid black with glass blur */}
-            <div className="absolute inset-0 bg-black/90 rounded-lg backdrop-blur-[25px] border border-white/[0.06] overflow-hidden">
-              {/* Noise texture overlay */}
-              <div className="absolute inset-0 noise-overlay opacity-[0.05]" />
-              {/* Top edge highlight */}
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
-              {/* Bottom edge highlight */}
-              <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
-              {/* Left edge highlight */}
-              <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
-              {/* Right edge highlight */}
-              <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
-              {/* Inner glass reflection */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] via-transparent to-white/[0.04] rounded-lg" />
-              {/* Center icon - Floating Glass Sphere (Enhanced 3D) */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* Glass sphere with dramatic 3D depth */}
-                <div className="relative w-16 h-16">
-                  {/* Outer glow halo */}
-                  <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-[#9281f7]/20 to-[#3b9eff]/10 blur-xl" />
-                  
-                  {/* Rotating rim light */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#9281f7]/40 via-transparent to-[#3b9eff]/30 animate-spin" style={{ animationDuration: '8s' }} />
-                  
-                  {/* Main glass sphere with 3D gradient */}
-                  <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/[0.25] via-white/[0.12] to-black/[0.3] backdrop-blur-2xl border border-white/[0.3] shadow-2xl overflow-hidden">
-                    {/* Inner depth shadow (bottom-right) */}
-                    <div className="absolute bottom-0 right-0 w-full h-full rounded-full bg-gradient-to-tl from-black/40 via-transparent to-transparent" />
-                    
-                    {/* Inner glow core */}
-                    <div className="absolute inset-3 rounded-full bg-gradient-to-br from-[#9281f7]/60 via-[#7aa2ff]/40 to-[#3b9eff]/50 blur-lg animate-glow-pulse" />
-                    
-                    {/* Primary glass highlight (top-left) */}
-                    <div className="absolute top-2 left-2 w-5 h-5 rounded-full bg-gradient-to-br from-white/70 to-white/30 blur-[2px]" />
-                    
-                    {/* Secondary highlight (smaller, sharper) */}
-                    <div className="absolute top-3 left-3 w-2 h-2 rounded-full bg-white/90" />
-                    
-                    {/* Shimmer sweep */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-transparent via-white/20 to-transparent animate-pulse" style={{ animationDuration: '3s' }} />
-                    
-                    {/* Fresnel rim glow */}
-                    <div className="absolute inset-0 rounded-full border-2 border-white/[0.15]" />
-                  </div>
-                  
-                  {/* Bottom shadow (stronger) */}
-                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-10 h-3 bg-black/60 rounded-full blur-lg" />
-                </div>
-              </div>
+        {/* 3D Glass Sphere — standalone with real CSS 3D transforms */}
+        <div className="flex justify-center mb-8 animate-fade-in" style={{ perspective: '600px' }}>
+          <div className="relative animate-float-3d" style={{ transformStyle: 'preserve-3d' }}>
+            {/* Outer atmospheric glow */}
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[#9281f7]/30 to-[#3b9eff]/20 blur-2xl animate-glow-pulse" />
+
+            {/* Rotating conic light ring (visible spin) */}
+            <div
+              className="absolute inset-0 rounded-full animate-spin"
+              style={{
+                animationDuration: '6s',
+                background: 'conic-gradient(from 0deg, #9281f7 0%, transparent 25%, #3b9eff 50%, transparent 75%, #9281f7 100%)',
+                opacity: 0.5,
+                filter: 'blur(4px)',
+              }}
+            />
+
+            {/* Main glass sphere — solid dark glass with strong bevel */}
+            <div
+              className="relative w-24 h-24 rounded-full overflow-hidden"
+              style={{
+                background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.08) 20%, rgba(10,10,12,0.85) 50%, rgba(0,0,0,0.95) 100%)',
+                backdropFilter: 'blur(20px) saturate(180%)',
+                border: '1px solid rgba(255,255,255,0.25)',
+                boxShadow: `
+                  inset 0 -8px 16px rgba(0,0,0,0.6),
+                  inset 0 8px 16px rgba(255,255,255,0.12),
+                  inset 0 0 0 1px rgba(255,255,255,0.08),
+                  0 0 0 1px rgba(255,255,255,0.06),
+                  0 20px 40px -10px rgba(0,0,0,0.8),
+                  0 0 60px -10px rgba(146,129,247,0.3)
+                `,
+              }}
+            >
+              {/* Inner glow core (pulsing) */}
+              <div
+                className="absolute inset-4 rounded-full animate-glow-pulse"
+                style={{
+                  background: 'radial-gradient(circle at 40% 40%, rgba(146,129,247,0.5) 0%, rgba(59,158,255,0.3) 50%, transparent 100%)',
+                  filter: 'blur(6px)',
+                }}
+              />
+
+              {/* Primary specular highlight — top-left bright spot */}
+              <div
+                className="absolute top-2 left-2 w-8 h-8 rounded-full"
+                style={{
+                  background: 'radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.3) 40%, transparent 100%)',
+                  filter: 'blur(3px)',
+                }}
+              />
+
+              {/* Sharp specular dot — the "catch light" */}
+              <div
+                className="absolute top-3 left-3 w-3 h-3 rounded-full bg-white"
+                style={{
+                  filter: 'blur(0.5px)',
+                  opacity: 0.95,
+                }}
+              />
+
+              {/* Bottom rim light — subtle bounce light */}
+              <div
+                className="absolute bottom-0 left-0 right-0 h-1/2 rounded-full"
+                style={{
+                  background: 'linear-gradient(to top, rgba(146,129,247,0.15) 0%, transparent 100%)',
+                }}
+              />
+
+              {/* Shimmer sweep — animated diagonal light pass */}
+              <div
+                className="absolute inset-0 rounded-full animate-pulse"
+                style={{
+                  background: 'linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%)',
+                  animationDuration: '4s',
+                }}
+              />
+
+              {/* Fresnel edge glow */}
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  boxShadow: 'inset 0 0 12px 2px rgba(255,255,255,0.1)',
+                }}
+              />
             </div>
+
+            {/* Ground shadow — ellipse below sphere */}
+            <div
+              className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-16 h-4 rounded-full bg-black/70"
+              style={{ filter: 'blur(8px)' }}
+            />
           </div>
         </div>
 
