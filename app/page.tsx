@@ -320,12 +320,12 @@ function Hero() {
         {/* 3D Iridescent Hexagon Icon */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="relative w-20 h-20 animate-float-3d">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#9281f7] via-[#3ad389] to-[#ffca16] rounded-lg rotate-45 blur-sm opacity-60 animate-glow-pulse" />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#9281f7] via-[#3ad389] to-[#ffca16] rounded-lg rotate-45 opacity-80" />
-            <div className="absolute inset-1 bg-[#0a0a0c] rounded-lg rotate-45 backdrop-blur-sm" />
-            <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/20 via-[#3ad389]/20 to-[#ffca16]/20 rounded-lg rotate-45 border border-white/10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#3a2f5e] via-[#2d2640] to-[#1a1628] rounded-lg rotate-45 blur-sm opacity-40 animate-glow-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#4a3f6e] via-[#3d364f] to-[#2a2638] rounded-lg rotate-45 opacity-60" />
+            <div className="absolute inset-1 bg-[#060606] rounded-lg rotate-45 backdrop-blur-sm" />
+            <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/10 via-[#6e5ba8]/10 to-[#4a3f6e]/10 rounded-lg rotate-45 border border-white/5" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <svg className="w-10 h-10 text-white relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+              <svg className="w-10 h-10 text-white/80 relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
               </svg>
             </div>
