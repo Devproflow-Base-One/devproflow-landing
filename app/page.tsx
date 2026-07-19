@@ -5,9 +5,9 @@ import { useState, useEffect, useCallback } from "react";
 /* ── Data ────────────────────────────────────────────── */
 
 const stats = [
-  { value: "12+", label: "Products Built", sub: "Commercial & enterprise" },
+  { value: "14+", label: "Products Built", sub: "Commercial & enterprise" },
   { value: "300+", label: "Browser Extensions", sub: "8 categories, production-ready" },
-  { value: "8", label: "Industries Served", sub: "Fintech to Lifestyle" },
+  { value: "10", label: "Industries Served", sub: "Fintech to Infrastructure" },
   { value: "∞", label: "Global Reach", sub: "Multi-region, scalable" },
 ];
 
@@ -191,6 +191,66 @@ const capabilities = [
   },
 ];
 
+const testimonials = [
+  {
+    quote: "DevProFlow delivered our platform in record time. The shared core meant we got enterprise-grade security out of the box.",
+    author: "Product Lead",
+    role: "Fintech Startup",
+  },
+  {
+    quote: "The Chrome Extension Factory alone saved us months of development. 300+ tools ready to deploy across 8 categories.",
+    author: "Engineering Manager",
+    role: "SaaS Company",
+  },
+  {
+    quote: "From concept to production in weeks, not months. The ecosystem approach is a game-changer for lean teams.",
+    author: "CTO",
+    role: "Digital Agency",
+  },
+  {
+    quote: "We needed a bilingual platform for our community. AuroraToday shipped with EN/ES support and a full local directory.",
+    author: "Operations Director",
+    role: "Local Media",
+  },
+  {
+    quote: "PayBridge solved a real problem for our Indonesian users — PayPal access without a credit card. Clean UX, fast delivery.",
+    author: "Founder",
+    role: "Payments Platform",
+  },
+  {
+    quote: "The self-hosted webmail replaced our Google Workspace dependency. Full IMAP/SMTP, dark mode, zero vendor lock-in.",
+    author: "IT Lead",
+    role: "Infrastructure Team",
+  },
+];
+
+const faqs = [
+  {
+    question: "What is DevProFlow?",
+    answer: "DevProFlow is a product ecosystem by Lumina Labs — a collection of 14+ commercial products spanning fintech, music, community, automotive, lifestyle, and infrastructure. Every product is powered by the same proven core, ensuring enterprise-grade reliability and rapid delivery.",
+  },
+  {
+    question: "How does the shared core work?",
+    answer: "Every product inherits the same foundation — authentication, database, analytics, security, and infrastructure. This means new products launch faster, with the same reliability and compliance standards as existing ones.",
+  },
+  {
+    question: "Are the products production-ready?",
+    answer: "Several products are already deployed and serving users (DevFlo, AuroraToday, Live Speak, Mosquemu). Others are in active development with clear completion percentages shown on each product card.",
+  },
+  {
+    question: "Can I use DevFlo AI for my own projects?",
+    answer: "Yes. DevFlo AI provides a unified API for 33+ LLM models with auto-fallback. It's live at aidevflo.devproflow.com and compatible with standard API formats.",
+  },
+  {
+    question: "What industries does DevProFlow serve?",
+    answer: "Our products span 10+ industries including fintech, music, religious communities, automotive, lifestyle, sports, food, local media, payments, and infrastructure.",
+  },
+  {
+    question: "Is DevProFlow open source?",
+    answer: "DevProFlow is a commercial product ecosystem. Some components and tools may be open-sourced in the future. Contact us at hello@devproflow.com for partnership or licensing inquiries.",
+  },
+];
+
 const techStack = [
   { name: "Next.js", icon: "nextdotjs", color: "ffffff" },
   { name: "React", icon: "react", color: "61dafb" },
@@ -261,7 +321,7 @@ function Hero() {
           <span className="inline-block w-2 h-2 rounded-full bg-[#3ad389] animate-pulse" />
           <span className="font-mono-label">ecosystem.live</span>
           <span className="text-[#464a4d]">·</span>
-          <span>12+ products · 300+ extensions</span>
+          <span>14+ products · 300+ extensions</span>
         </div>
         <h1 className="text-5xl sm:text-7xl lg:text-8xl font-serif-display tracking-tight mb-6 animate-fade-up text-[#fcfdff]">
           Built to lead.<br /><span className="text-iris">Born for scale.</span>
@@ -499,6 +559,89 @@ function TechStack() {
   );
 }
 
+function Testimonials() {
+  return (
+    <section className="relative py-24 scroll-mt-16 border-y border-[#292d30]">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#292d30] bg-[#0a0a0c] text-xs text-[#a1a4a5] mb-4">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#9281f7]" />
+            <span className="font-mono-label">Trusted by builders</span>
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-serif-display tracking-tight mb-4 text-[#fcfdff]">
+            What people are <span className="text-iris">saying</span>
+          </h2>
+          <p className="text-[#a1a4a5] text-sm sm:text-base max-w-2xl mx-auto">Real feedback from teams using DevProFlow products.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {testimonials.map((t, i) => (
+            <div key={i} className="group rounded-lg border border-[#292d30] bg-[#0a0a0c] p-6 hover:border-[#3a3f44] transition-all animate-fade-up" style={{ animationDelay: `${i * 0.08}s` }}>
+              <svg className="w-8 h-8 text-[#292d30] mb-4 group-hover:text-iris transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.281.65-.384.217-.117.413-.241.617-.328.198-.092.39-.178.575-.258.18-.079.355-.16.518-.226.157-.063.303-.13.438-.185.127-.052.243-.103.349-.143l.303-.117.267-.097c.078-.027.146-.05.207-.07l.183-.062c.056-.017.098-.03.134-.04.068-.022.108-.034.108-.034l-.075-.287s-.043.011-.117.031c-.037.011-.082.022-.134.04l-.193.065c-.066.022-.142.046-.227.074l-.278.1-.31.12c-.112.043-.233.094-.36.151-.13.057-.273.115-.418.183-.144.07-.296.142-.452.225-.156.082-.32.163-.481.262-.161.099-.335.193-.497.31-.162.117-.339.226-.491.367-.156.137-.322.267-.462.426-.147.153-.292.31-.413.481-.128.165-.237.345-.338.527-.105.18-.183.368-.262.55-.079.182-.136.368-.193.548-.057.18-.097.358-.136.528-.04.17-.062.333-.085.487-.022.154-.037.298-.048.431-.011.133-.016.255-.022.367-.006.112-.006.213-.006.302v.205c0 .06.003.105.003.137v.082c0 .022.003.034.003.034l.06-.003.155-.008c.06-.003.134-.008.214-.014.082-.006.171-.014.267-.022.097-.008.198-.014.302-.014.105 0 .214.003.327.014.113.008.229.022.347.04.118.022.236.043.355.074.118.031.236.066.355.112.118.046.233.1.347.16.114.06.224.13.328.207.105.077.202.165.292.26.09.094.171.196.244.302.074.105.134.22.183.338.05.12.086.244.112.372.026.13.034.262.034.398 0 .137-.014.273-.04.41-.026.137-.066.273-.118.41-.05.137-.118.273-.193.41-.074.137-.165.273-.262.41-.097.137-.207.273-.328.41-.12.137-.254.273-.398.41-.144.137-.302.273-.472.41-.17.137-.35.273-.541.41-.192.137-.395.273-.61.41-.215.137-.441.273-.68.41-.239.137-.489.273-.752.41-.263.137-.538.273-.826.41l-.303.117-.267.097c-.078.027-.146.05-.207.07l-.183.062c-.056.017-.098.03-.134.04-.068.022-.108.034-.108.034l.075.287s.043-.011.117-.031c.037-.011.082-.022.134-.04l.193-.065c.066-.022.142-.046.227-.074l.278-.1.31-.12c.112-.043.233-.094.36-.151.13-.057.273-.115.418-.183.144-.07.296-.142.452-.225.156-.082.32-.163.481-.262.161-.099.335-.193.497-.31.162-.117.339-.226.491-.367.156-.137.322-.267.462-.426.147-.153.292-.31.413-.481.128-.165.237-.345.338-.527.105-.18.183-.368.262-.55.079-.182.136-.368.193-.548.057-.18.097-.358.136-.528.04-.17.062-.333.085-.487.022-.154.037-.298.048-.431.011-.133.016-.255.022-.367.006-.112.006-.213.006-.302v-.205c0-.06-.003-.105-.003-.137v-.082c0-.022-.003-.034-.003-.034l-.06.003-.155.008c-.06.003-.134.008-.214.014-.082.006-.171.014-.267.022-.097.008-.198.014-.302.014-.105 0-.214-.003-.327-.014-.113-.008-.229-.022-.347-.04-.118-.022-.236-.043-.355-.074-.118-.031-.236-.066-.355-.112-.118-.046-.233-.1-.347-.16-.114-.06-.224-.13-.328-.207-.105-.077-.202-.165-.292-.26-.09-.094-.171-.196-.244-.302-.074-.105-.134-.22-.183-.338-.05-.12-.086-.244-.112-.372-.026-.13-.034-.262-.034-.398 0-.137.014-.273.04-.41.026-.137.066-.273.118-.41.05-.137.118-.273.193-.41.074-.137.165-.273.262-.41.097-.137.207-.273.328-.41.12-.137.254-.273.398-.41.144-.137.302-.273.472-.41.17-.137.35-.273.541-.41.192-.137.395-.273.61-.41.215-.137.441-.273.68-.41.239-.137.489-.273.752-.41.263-.137.538-.273.826-.41z" /></svg>
+              <p className="text-sm text-[#a1a4a5] leading-relaxed mb-5">{t.quote}</p>
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full border border-[#292d30] bg-[#101012] flex items-center justify-center">
+                  <span className="text-xs font-bold text-iris">{t.author.charAt(0)}</span>
+                </div>
+                <div>
+                  <div className="text-xs font-semibold text-white">{t.author}</div>
+                  <div className="text-[10px] text-[#6e727a] font-mono-label">{t.role}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  return (
+    <section className="relative py-24 scroll-mt-16">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#292d30] bg-[#0a0a0c] text-xs text-[#a1a4a5] mb-4">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#9281f7]" />
+            <span className="font-mono-label">Questions? Answers.</span>
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-serif-display tracking-tight mb-4 text-[#fcfdff]">
+            Frequently asked <span className="text-iris">questions</span>
+          </h2>
+          <p className="text-[#a1a4a5] text-sm sm:text-base max-w-2xl mx-auto">Everything you need to know about DevProFlow and the Lumina ecosystem.</p>
+        </div>
+        <div className="space-y-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="rounded-lg border border-[#292d30] bg-[#0a0a0c] overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-[#101012] transition-colors"
+              >
+                <span className="text-sm font-semibold text-white pr-4">{faq.question}</span>
+                <svg
+                  className={`w-5 h-5 text-[#6e727a] flex-shrink-0 transition-transform duration-300 ${openIndex === i ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ${openIndex === i ? "max-h-96" : "max-h-0"}`}
+              >
+                <p className="px-5 pb-5 text-sm text-[#a1a4a5] leading-relaxed">{faq.answer}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function CTA() {
   return (
     <section className="relative py-24">
@@ -553,6 +696,8 @@ export default function Home() {
       <CoverflowCarousel />
       <Capabilities />
       <TechStack />
+      <Testimonials />
+      <FAQ />
       <CTA />
       <Footer />
     </main>

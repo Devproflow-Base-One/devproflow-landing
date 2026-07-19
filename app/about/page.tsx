@@ -17,9 +17,9 @@ const profile = {
 };
 
 const stats = [
-  { label: "Products Built", value: "12+" },
+  { label: "Products Built", value: "14+" },
   { label: "Browser Extensions", value: "300+" },
-  { label: "Industries Served", value: "8" },
+  { label: "Industries Served", value: "10" },
   { label: "Years Experience", value: "3" },
 ];
 
