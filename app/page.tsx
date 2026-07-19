@@ -338,27 +338,39 @@ function Hero() {
               <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
               {/* Inner glass reflection */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] via-transparent to-white/[0.04] rounded-lg" />
-              {/* Center icon - Floating Glass Sphere */}
+              {/* Center icon - Floating Glass Sphere (Enhanced 3D) */}
               <div className="absolute inset-0 flex items-center justify-center">
-                {/* Glass sphere with multiple layers */}
-                <div className="relative w-12 h-12">
-                  {/* Outer rim light (rotating) */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#9281f7]/30 via-transparent to-[#3b9eff]/20 animate-spin" style={{ animationDuration: '8s' }} />
+                {/* Glass sphere with dramatic 3D depth */}
+                <div className="relative w-16 h-16">
+                  {/* Outer glow halo */}
+                  <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-[#9281f7]/20 to-[#3b9eff]/10 blur-xl" />
                   
-                  {/* Main glass sphere */}
-                  <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/[0.15] to-white/[0.05] backdrop-blur-xl border border-white/[0.2] shadow-2xl">
-                    {/* Inner glow */}
-                    <div className="absolute inset-2 rounded-full bg-gradient-to-br from-[#9281f7]/40 to-[#3b9eff]/30 blur-md animate-glow-pulse" />
+                  {/* Rotating rim light */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#9281f7]/40 via-transparent to-[#3b9eff]/30 animate-spin" style={{ animationDuration: '8s' }} />
+                  
+                  {/* Main glass sphere with 3D gradient */}
+                  <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/[0.25] via-white/[0.12] to-black/[0.3] backdrop-blur-2xl border border-white/[0.3] shadow-2xl overflow-hidden">
+                    {/* Inner depth shadow (bottom-right) */}
+                    <div className="absolute bottom-0 right-0 w-full h-full rounded-full bg-gradient-to-tl from-black/40 via-transparent to-transparent" />
                     
-                    {/* Glass highlight (top-left) */}
-                    <div className="absolute top-1 left-1 w-3 h-3 rounded-full bg-white/40 blur-sm" />
+                    {/* Inner glow core */}
+                    <div className="absolute inset-3 rounded-full bg-gradient-to-br from-[#9281f7]/60 via-[#7aa2ff]/40 to-[#3b9eff]/50 blur-lg animate-glow-pulse" />
                     
-                    {/* Shimmer effect */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-transparent via-white/10 to-transparent animate-pulse" style={{ animationDuration: '3s' }} />
+                    {/* Primary glass highlight (top-left) */}
+                    <div className="absolute top-2 left-2 w-5 h-5 rounded-full bg-gradient-to-br from-white/70 to-white/30 blur-[2px]" />
+                    
+                    {/* Secondary highlight (smaller, sharper) */}
+                    <div className="absolute top-3 left-3 w-2 h-2 rounded-full bg-white/90" />
+                    
+                    {/* Shimmer sweep */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-transparent via-white/20 to-transparent animate-pulse" style={{ animationDuration: '3s' }} />
+                    
+                    {/* Fresnel rim glow */}
+                    <div className="absolute inset-0 rounded-full border-2 border-white/[0.15]" />
                   </div>
                   
-                  {/* Bottom shadow */}
-                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-8 h-2 bg-black/40 rounded-full blur-md" />
+                  {/* Bottom shadow (stronger) */}
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-10 h-3 bg-black/60 rounded-full blur-lg" />
                 </div>
               </div>
             </div>
