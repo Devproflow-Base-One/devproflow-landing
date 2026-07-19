@@ -319,15 +319,16 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* 3D Iridescent Hexagon Icon */}
+        {/* 3D Glass Box Icon */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="relative w-20 h-20 animate-float-3d">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1a1628] via-[#2d2640] to-[#3a2f5e] rounded-lg rotate-45" />
-            <div className="absolute inset-1 bg-[#060606] rounded-lg rotate-45" />
-            <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/30 via-[#6e5ba8]/20 to-[#4a3f6e]/10 rounded-lg rotate-45 backdrop-blur-md border border-white/10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#1a1628] via-[#2d2640] to-[#3a2f5e] rounded-xl blur-sm opacity-40 animate-glow-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#4a3f6e] via-[#3d364f] to-[#2a2638] rounded-xl opacity-60" />
+            <div className="absolute inset-1 bg-[#060606] rounded-xl backdrop-blur-sm" />
+            <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/25 via-[#6e5ba8]/15 to-[#4a3f6e]/10 rounded-xl backdrop-blur-md border border-white/10" />
             <div className="absolute inset-0 flex items-center justify-center">
               <svg className="w-10 h-10 text-white relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
               </svg>
             </div>
           </div>
