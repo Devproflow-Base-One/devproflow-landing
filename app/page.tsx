@@ -336,72 +336,61 @@ function Hero() {
               }}
             />
 
-            {/* Main glass sphere — solid dark glass with strong bevel */}
+            {/* Main glass sphere — solid black glass */}
             <div
               className="relative w-24 h-24 rounded-full overflow-hidden"
               style={{
-                background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.08) 20%, rgba(10,10,12,0.85) 50%, rgba(0,0,0,0.95) 100%)',
+                background: 'radial-gradient(circle at 30% 30%, rgba(40,40,45,0.9) 0%, rgba(10,10,12,0.95) 30%, #000000 70%)',
                 backdropFilter: 'blur(20px) saturate(180%)',
-                border: '1px solid rgba(255,255,255,0.25)',
+                border: '1px solid rgba(255,255,255,0.12)',
                 boxShadow: `
-                  inset 0 -8px 16px rgba(0,0,0,0.6),
-                  inset 0 8px 16px rgba(255,255,255,0.12),
-                  inset 0 0 0 1px rgba(255,255,255,0.08),
-                  0 0 0 1px rgba(255,255,255,0.06),
-                  0 20px 40px -10px rgba(0,0,0,0.8),
-                  0 0 60px -10px rgba(146,129,247,0.3)
+                  inset 0 -10px 20px rgba(0,0,0,0.8),
+                  inset 0 10px 20px rgba(255,255,255,0.06),
+                  inset 0 0 0 1px rgba(255,255,255,0.05),
+                  0 0 0 1px rgba(255,255,255,0.04),
+                  0 20px 40px -10px rgba(0,0,0,0.9),
+                  0 0 60px -10px rgba(146,129,247,0.25)
                 `,
               }}
             >
               {/* Inner glow core (pulsing) */}
               <div
-                className="absolute inset-4 rounded-full animate-glow-pulse"
+                className="absolute inset-5 rounded-full animate-glow-pulse"
                 style={{
-                  background: 'radial-gradient(circle at 40% 40%, rgba(146,129,247,0.5) 0%, rgba(59,158,255,0.3) 50%, transparent 100%)',
-                  filter: 'blur(6px)',
+                  background: 'radial-gradient(circle at 40% 40%, rgba(146,129,247,0.35) 0%, rgba(59,158,255,0.2) 50%, transparent 100%)',
+                  filter: 'blur(8px)',
                 }}
               />
 
-              {/* Primary specular highlight — top-left bright spot */}
+              {/* Glass edge highlight — top-left arc */}
               <div
-                className="absolute top-2 left-2 w-8 h-8 rounded-full"
+                className="absolute top-1 left-1 w-10 h-10 rounded-full"
                 style={{
-                  background: 'radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.3) 40%, transparent 100%)',
-                  filter: 'blur(3px)',
+                  background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 50%)',
+                  filter: 'blur(2px)',
                 }}
               />
 
-              {/* Sharp specular dot — the "catch light" */}
+              {/* Sharp catch light */}
               <div
-                className="absolute top-3 left-3 w-3 h-3 rounded-full bg-white"
-                style={{
-                  filter: 'blur(0.5px)',
-                  opacity: 0.95,
-                }}
+                className="absolute top-3 left-3 w-2 h-2 rounded-full bg-white/80"
+                style={{ filter: 'blur(0.5px)' }}
               />
 
-              {/* Bottom rim light — subtle bounce light */}
+              {/* Bottom rim bounce */}
               <div
-                className="absolute bottom-0 left-0 right-0 h-1/2 rounded-full"
+                className="absolute bottom-0 left-0 right-0 h-1/3 rounded-full"
                 style={{
-                  background: 'linear-gradient(to top, rgba(146,129,247,0.15) 0%, transparent 100%)',
+                  background: 'linear-gradient(to top, rgba(146,129,247,0.1) 0%, transparent 100%)',
                 }}
               />
 
-              {/* Shimmer sweep — animated diagonal light pass */}
+              {/* Shimmer sweep */}
               <div
                 className="absolute inset-0 rounded-full animate-pulse"
                 style={{
-                  background: 'linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%)',
+                  background: 'linear-gradient(135deg, transparent 35%, rgba(255,255,255,0.08) 50%, transparent 65%)',
                   animationDuration: '4s',
-                }}
-              />
-
-              {/* Fresnel edge glow */}
-              <div
-                className="absolute inset-0 rounded-full"
-                style={{
-                  boxShadow: 'inset 0 0 12px 2px rgba(255,255,255,0.1)',
                 }}
               />
             </div>
