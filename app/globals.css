@@ -197,6 +197,19 @@ a {
   animation: glowPulse 4s ease-in-out infinite;
 }
 
+@keyframes float3d {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  }
+}
+
+.animate-float-3d {
+  animation: float3d 6s ease-in-out infinite;
+}
+
 /* Iris violet text */
 .text-iris {
   color: #9281f7;

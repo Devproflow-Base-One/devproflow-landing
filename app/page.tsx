@@ -317,6 +317,21 @@ function Hero() {
       <div className="absolute inset-0 spotlight-halo opacity-30" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        {/* 3D Iridescent Hexagon Icon */}
+        <div className="flex justify-center mb-8 animate-fade-in">
+          <div className="relative w-20 h-20 animate-float-3d">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#9281f7] via-[#3ad389] to-[#ffca16] rounded-lg rotate-45 blur-sm opacity-60 animate-glow-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#9281f7] via-[#3ad389] to-[#ffca16] rounded-lg rotate-45 opacity-80" />
+            <div className="absolute inset-1 bg-[#0a0a0c] rounded-lg rotate-45 backdrop-blur-sm" />
+            <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/20 via-[#3ad389]/20 to-[#ffca16]/20 rounded-lg rotate-45 border border-white/10" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <svg className="w-10 h-10 text-white relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#292d30] bg-[#0a0a0c]/60 backdrop-blur-sm text-xs text-[#a1a4a5] mb-8 animate-fade-in">
           <span className="inline-block w-2 h-2 rounded-full bg-[#3ad389] animate-pulse" />
           <span className="font-mono-label">ecosystem.live</span>
