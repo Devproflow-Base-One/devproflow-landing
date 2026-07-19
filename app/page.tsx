@@ -319,21 +319,29 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* Premium 3D Glass Icon */}
+        {/* Resend-style 3D Black Glass Cube */}
         <div className="flex justify-center mb-8 animate-fade-in">
-          <div className="relative w-24 h-24 animate-float-3d">
-            {/* Outer glow */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#9281f7]/20 via-[#6e5ba8]/15 to-[#4a3f6e]/10 rounded-2xl blur-xl animate-glow-pulse" />
-            {/* Main glass box */}
-            <div className="absolute inset-1 bg-gradient-to-br from-[#2a2638] via-[#1a1628] to-[#0f0d14] rounded-2xl backdrop-blur-xl border border-white/10 shadow-2xl">
-              {/* Inner highlight */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent rounded-2xl" />
-              {/* Center gradient */}
-              <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/30 via-[#6e5ba8]/20 to-[#4a3f6e]/10 rounded-xl backdrop-blur-md" />
-              {/* Icon */}
+          <div className="relative w-20 h-20 animate-float-3d">
+            {/* Subtle outer glow */}
+            <div className="absolute inset-0 bg-[#9281f7]/5 rounded-lg blur-2xl animate-glow-pulse" />
+            {/* Main cube - solid black with glass blur */}
+            <div className="absolute inset-0 bg-black/90 rounded-lg backdrop-blur-[25px] border border-white/[0.06] overflow-hidden">
+              {/* Noise texture overlay */}
+              <div className="absolute inset-0 noise-overlay opacity-[0.05]" />
+              {/* Top edge highlight */}
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
+              {/* Bottom edge highlight */}
+              <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
+              {/* Left edge highlight */}
+              <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
+              {/* Right edge highlight */}
+              <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
+              {/* Inner glass reflection */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] via-transparent to-white/[0.04] rounded-lg" />
+              {/* Center icon */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <svg className="w-12 h-12 text-white relative z-10 drop-shadow-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg className="w-8 h-8 text-[#f0f0f0] relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
             </div>
