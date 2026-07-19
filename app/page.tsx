@@ -317,6 +317,90 @@ function Hero() {
       <div className="absolute inset-0 spotlight-halo opacity-30" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        {/* Glass Sphere Logo */}
+        <div className="flex justify-center mb-8 animate-fade-in" style={{ perspective: '600px' }}>
+          <div className="relative animate-float-3d" style={{ transformStyle: 'preserve-3d' }}>
+            {/* Outer atmospheric glow */}
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[#9281f7]/25 to-[#3b9eff]/15 blur-2xl animate-glow-pulse" />
+
+            {/* Rotating conic light ring */}
+            <div
+              className="absolute inset-0 rounded-full animate-spin"
+              style={{
+                animationDuration: '6s',
+                background: 'conic-gradient(from 0deg, #9281f7 0%, transparent 25%, #3b9eff 50%, transparent 75%, #9281f7 100%)',
+                opacity: 0.4,
+                filter: 'blur(4px)',
+              }}
+            />
+
+            {/* Main glass sphere — solid black glass */}
+            <div
+              className="relative w-20 h-20 rounded-full overflow-hidden"
+              style={{
+                background: 'radial-gradient(circle at 30% 30%, rgba(40,40,45,0.9) 0%, rgba(10,10,12,0.95) 30%, #000000 70%)',
+                backdropFilter: 'blur(20px) saturate(180%)',
+                border: '1px solid rgba(255,255,255,0.12)',
+                boxShadow: `
+                  inset 0 -10px 20px rgba(0,0,0,0.8),
+                  inset 0 10px 20px rgba(255,255,255,0.06),
+                  inset 0 0 0 1px rgba(255,255,255,0.05),
+                  0 0 0 1px rgba(255,255,255,0.04),
+                  0 20px 40px -10px rgba(0,0,0,0.9),
+                  0 0 60px -10px rgba(146,129,247,0.25)
+                `,
+              }}
+            >
+              {/* Inner glow core (pulsing) */}
+              <div
+                className="absolute inset-5 rounded-full animate-glow-pulse"
+                style={{
+                  background: 'radial-gradient(circle at 40% 40%, rgba(146,129,247,0.35) 0%, rgba(59,158,255,0.2) 50%, transparent 100%)',
+                  filter: 'blur(8px)',
+                }}
+              />
+
+              {/* Glass edge highlight — top-left arc */}
+              <div
+                className="absolute top-1 left-1 w-10 h-10 rounded-full"
+                style={{
+                  background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 50%)',
+                  filter: 'blur(2px)',
+                }}
+              />
+
+              {/* Sharp catch light */}
+              <div
+                className="absolute top-3 left-3 w-2 h-2 rounded-full bg-white/80"
+                style={{ filter: 'blur(0.5px)' }}
+              />
+
+              {/* Bottom rim bounce */}
+              <div
+                className="absolute bottom-0 left-0 right-0 h-1/3 rounded-full"
+                style={{
+                  background: 'linear-gradient(to top, rgba(146,129,247,0.1) 0%, transparent 100%)',
+                }}
+              />
+
+              {/* Shimmer sweep */}
+              <div
+                className="absolute inset-0 rounded-full animate-pulse"
+                style={{
+                  background: 'linear-gradient(135deg, transparent 35%, rgba(255,255,255,0.08) 50%, transparent 65%)',
+                  animationDuration: '4s',
+                }}
+              />
+            </div>
+
+            {/* Ground shadow */}
+            <div
+              className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-14 h-3 rounded-full bg-black/70"
+              style={{ filter: 'blur(8px)' }}
+            />
+          </div>
+        </div>
+
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#292d30] bg-[#0a0a0c]/60 backdrop-blur-sm text-xs text-[#a1a4a5] mb-8 animate-fade-in">
           <span className="inline-block w-2 h-2 rounded-full bg-[#3ad389] animate-pulse" />
           <span className="font-mono-label">ecosystem.live</span>
