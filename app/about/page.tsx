@@ -267,7 +267,7 @@ export default function AboutPage() {
         <Section id="capabilities" title="Capabilities" description="What we bring across web, mobile, cloud, and security.">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {skills.map((skill) => (
-              <div key={skill.category} className="p-5">
+              <div key={skill.category} className="py-2">
                 <h3 className="text-sm font-semibold text-iris mb-3">{skill.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item) => (
@@ -324,7 +324,7 @@ export default function AboutPage() {
           title="Compliance & Standards"
           description="Security and accessibility are baked into everything we build."
         >
-          <div className="p-6">
+          <div className="py-2">
             <p className="text-sm text-[#a1a4a5] mb-4">
               Every product ships with enterprise-grade security, structured monitoring, and zero-trust authentication. We reuse the same
               compliance foundation across all launches.
