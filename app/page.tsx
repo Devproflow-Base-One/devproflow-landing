@@ -319,31 +319,16 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* Resend-style 3D Black Glass Cube */}
+        {/* 3D Iridescent Hexagon Icon */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="relative w-20 h-20 animate-float-3d">
-            {/* Subtle outer glow */}
-            <div className="absolute inset-0 bg-[#9281f7]/5 rounded-lg blur-2xl animate-glow-pulse" />
-            {/* Main cube - solid black with glass blur */}
-            <div className="absolute inset-0 bg-black/90 rounded-lg backdrop-blur-[25px] border border-white/[0.06] overflow-hidden">
-              {/* Noise texture overlay */}
-              <div className="absolute inset-0 noise-overlay opacity-[0.05]" />
-              {/* Top edge highlight */}
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
-              {/* Bottom edge highlight */}
-              <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
-              {/* Left edge highlight */}
-              <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
-              {/* Right edge highlight */}
-              <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
-              {/* Inner glass reflection */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] via-transparent to-white/[0.04] rounded-lg" />
-              {/* Center icon - stylized D (Resend-style single path) */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg className="w-8 h-8 relative z-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 4C18.4183 4 22 7.58172 22 12C22 16.4183 18.4183 20 14 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4H14ZM14 7.5C16.4853 7.5 18.5 9.51472 18.5 12C18.5 14.4853 16.4853 16.5 14 16.5H8.5V7.5H14Z" fill="#f0f0f0" />
-                </svg>
-              </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#1a1628] via-[#2d2640] to-[#3a2f5e] rounded-lg rotate-45" />
+            <div className="absolute inset-1 bg-[#060606] rounded-lg rotate-45" />
+            <div className="absolute inset-2 bg-gradient-to-br from-[#9281f7]/30 via-[#6e5ba8]/20 to-[#4a3f6e]/10 rounded-lg rotate-45 backdrop-blur-md border border-white/10" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <svg className="w-10 h-10 text-white relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
             </div>
           </div>
         </div>
