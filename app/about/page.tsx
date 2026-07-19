@@ -324,7 +324,7 @@ export default function AboutPage() {
           title="Compliance & Standards"
           description="Security and accessibility are baked into everything we build."
         >
-          <div className="rounded-lg border border-[#292d30] bg-[#0a0a0c] p-6">
+          <div className="p-6">
             <p className="text-sm text-[#a1a4a5] mb-4">
               Every product ships with enterprise-grade security, structured monitoring, and zero-trust authentication. We reuse the same
               compliance foundation across all launches.
