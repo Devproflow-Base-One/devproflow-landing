@@ -338,10 +338,10 @@ function Hero() {
               <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
               {/* Inner glass reflection */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] via-transparent to-white/[0.04] rounded-lg" />
-              {/* Center icon */}
+              {/* Center icon - stylized D (Resend-style single path) */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#f0f0f0] relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                <svg className="w-8 h-8 relative z-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4C18.4183 4 22 7.58172 22 12C22 16.4183 18.4183 20 14 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4H14ZM14 7.5C16.4853 7.5 18.5 9.51472 18.5 12C18.5 14.4853 16.4853 16.5 14 16.5H8.5V7.5H14Z" fill="#f0f0f0" />
                 </svg>
               </div>
             </div>
