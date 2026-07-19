@@ -319,85 +319,150 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* 3D Glass Sphere — standalone with real CSS 3D transforms */}
+        {/* 3D Glass Diamond/Crystal — faceted with light rays */}
         <div className="flex justify-center mb-8 animate-fade-in" style={{ perspective: '600px' }}>
           <div className="relative animate-float-3d" style={{ transformStyle: 'preserve-3d' }}>
             {/* Outer atmospheric glow */}
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[#9281f7]/30 to-[#3b9eff]/20 blur-2xl animate-glow-pulse" />
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[#9281f7]/25 to-[#3b9eff]/15 blur-2xl animate-glow-pulse" />
 
-            {/* Rotating conic light ring (visible spin) */}
+            {/* Rotating conic light ring behind crystal */}
             <div
               className="absolute inset-0 rounded-full animate-spin"
               style={{
                 animationDuration: '6s',
                 background: 'conic-gradient(from 0deg, #9281f7 0%, transparent 25%, #3b9eff 50%, transparent 75%, #9281f7 100%)',
-                opacity: 0.5,
-                filter: 'blur(4px)',
+                opacity: 0.4,
+                filter: 'blur(6px)',
               }}
             />
 
-            {/* Main glass sphere — solid black glass */}
+            {/* Diamond shape using clip-path */}
             <div
-              className="relative w-20 h-20 rounded-full overflow-hidden"
+              className="relative w-20 h-20"
               style={{
-                background: 'radial-gradient(circle at 30% 30%, rgba(40,40,45,0.9) 0%, rgba(10,10,12,0.95) 30%, #000000 70%)',
+                clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
+                background: 'radial-gradient(circle at 35% 25%, rgba(50,50,55,0.9) 0%, rgba(10,10,12,0.95) 40%, #000000 80%)',
                 backdropFilter: 'blur(20px) saturate(180%)',
-                border: '1px solid rgba(255,255,255,0.12)',
-                boxShadow: `
-                  inset 0 -10px 20px rgba(0,0,0,0.8),
-                  inset 0 10px 20px rgba(255,255,255,0.06),
-                  inset 0 0 0 1px rgba(255,255,255,0.05),
-                  0 0 0 1px rgba(255,255,255,0.04),
-                  0 20px 40px -10px rgba(0,0,0,0.9),
-                  0 0 60px -10px rgba(146,129,247,0.25)
-                `,
+                filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.15))',
               }}
             >
-              {/* Inner glow core (pulsing) */}
+              {/* Facet line 1 — top-left to center */}
               <div
-                className="absolute inset-5 rounded-full animate-glow-pulse"
+                className="absolute inset-0"
                 style={{
-                  background: 'radial-gradient(circle at 40% 40%, rgba(146,129,247,0.35) 0%, rgba(59,158,255,0.2) 50%, transparent 100%)',
-                  filter: 'blur(8px)',
+                  clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
+                  background: 'linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.08) 50%, transparent 70%)',
                 }}
               />
 
-              {/* Glass edge highlight — top-left arc */}
+              {/* Facet line 2 — vertical center */}
               <div
-                className="absolute top-1 left-1 w-10 h-10 rounded-full"
+                className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-white/20 via-white/5 to-transparent"
+              />
+
+              {/* Facet line 3 — horizontal upper */}
+              <div
+                className="absolute top-[38%] left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+              />
+
+              {/* Facet line 4 — left diagonal */}
+              <div
+                className="absolute top-0 left-0 w-full h-full"
                 style={{
-                  background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 50%)',
+                  background: 'linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%)',
+                }}
+              />
+
+              {/* Facet line 5 — right diagonal */}
+              <div
+                className="absolute top-0 left-0 w-full h-full"
+                style={{
+                  background: 'linear-gradient(-45deg, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%)',
+                }}
+              />
+
+              {/* Top facet highlight — brightest point */}
+              <div
+                className="absolute top-1 left-1/2 -translate-x-1/2 w-6 h-4"
+                style={{
+                  background: 'radial-gradient(ellipse, rgba(255,255,255,0.5) 0%, transparent 70%)',
                   filter: 'blur(2px)',
                 }}
               />
 
-              {/* Sharp catch light */}
+              {/* Sharp catch light — top */}
               <div
-                className="absolute top-3 left-3 w-2 h-2 rounded-full bg-white/80"
+                className="absolute top-2 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-white/80"
                 style={{ filter: 'blur(0.5px)' }}
               />
 
-              {/* Bottom rim bounce */}
+              {/* Left facet glow */}
               <div
-                className="absolute bottom-0 left-0 right-0 h-1/3 rounded-full"
+                className="absolute top-[20%] left-[5%] w-8 h-12"
                 style={{
-                  background: 'linear-gradient(to top, rgba(146,129,247,0.1) 0%, transparent 100%)',
+                  background: 'radial-gradient(ellipse, rgba(146,129,247,0.2) 0%, transparent 70%)',
+                  filter: 'blur(3px)',
                 }}
               />
 
-              {/* Shimmer sweep */}
+              {/* Right facet glow */}
               <div
-                className="absolute inset-0 rounded-full animate-pulse"
+                className="absolute top-[20%] right-[5%] w-8 h-12"
                 style={{
-                  background: 'linear-gradient(135deg, transparent 35%, rgba(255,255,255,0.08) 50%, transparent 65%)',
+                  background: 'radial-gradient(ellipse, rgba(59,158,255,0.15) 0%, transparent 70%)',
+                  filter: 'blur(3px)',
+                }}
+              />
+
+              {/* Bottom facet inner glow (pulsing) */}
+              <div
+                className="absolute bottom-[10%] left-1/2 -translate-x-1/2 w-10 h-8 animate-glow-pulse"
+                style={{
+                  background: 'radial-gradient(ellipse, rgba(146,129,247,0.3) 0%, rgba(59,158,255,0.15) 50%, transparent 100%)',
+                  filter: 'blur(4px)',
+                }}
+              />
+
+              {/* Shimmer sweep — diagonal light pass */}
+              <div
+                className="absolute inset-0 animate-pulse"
+                style={{
+                  clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
+                  background: 'linear-gradient(135deg, transparent 35%, rgba(255,255,255,0.1) 50%, transparent 65%)',
                   animationDuration: '4s',
+                }}
+              />
+
+              {/* Light ray 1 — from top */}
+              <div
+                className="absolute -top-6 left-1/2 -translate-x-1/2 w-px h-6"
+                style={{
+                  background: 'linear-gradient(to bottom, transparent, rgba(255,255,255,0.15))',
+                }}
+              />
+
+              {/* Light ray 2 — from bottom-left */}
+              <div
+                className="absolute -bottom-4 left-[20%] w-px h-4"
+                style={{
+                  background: 'linear-gradient(to top, transparent, rgba(146,129,247,0.1))',
+                  transform: 'rotate(-20deg)',
+                }}
+              />
+
+              {/* Light ray 3 — from bottom-right */}
+              <div
+                className="absolute -bottom-4 right-[20%] w-px h-4"
+                style={{
+                  background: 'linear-gradient(to top, transparent, rgba(59,158,255,0.1))',
+                  transform: 'rotate(20deg)',
                 }}
               />
             </div>
 
-            {/* Ground shadow — ellipse below sphere */}
+            {/* Ground shadow — ellipse below crystal */}
             <div
-              className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-16 h-4 rounded-full bg-black/70"
+              className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-14 h-3 rounded-full bg-black/70"
               style={{ filter: 'blur(8px)' }}
             />
           </div>
