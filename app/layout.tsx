@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
     shortcut: '/favicon.svg',
   },
-  description: "Pure-black SaaS studio shipping 12+ products, 300+ Chrome extensions, and zero-cost AI automations.",
+  description: "Pure-black SaaS studio shipping 14+ products, 300+ Chrome extensions, and zero-cost AI automations.",
   keywords: [
     "DevProFlow",
     "Lumina",
@@ -36,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">{children}<Analytics /></body>
     </html>
   );
 }

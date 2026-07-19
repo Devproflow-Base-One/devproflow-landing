@@ -50,7 +50,7 @@ const products = [
     description: "Hybrid signal dashboard with smart analysis. Real-time crypto + global stock signals.",
     icon: "M3 3v18h18M7 14l4-4 4 4 6-6",
     status: "90%",
-    url: "#",
+    url: "/coming-soon?name=MarktBit",
     tech: ["Next.js 15", "Node.js", "PostgreSQL"],
   },
   {
@@ -59,7 +59,7 @@ const products = [
     description: "Mass production system for Chrome extensions. Academic, productivity, writing, PDF, video, learning.",
     icon: "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M9 5h6a2 2 0 012 2v10a2 2 0 01-2 2H9a2 2 0 01-2-2V7a2 2 0 012-2z",
     status: "97%",
-    url: "#",
+    url: "/coming-soon?name=Chrome+Extension+Factory",
     tech: ["TypeScript", "Vite", "Chrome MV3", "Playwright"],
   },
   {
@@ -68,7 +68,7 @@ const products = [
     description: "Complete mosque management with 14 languages, secure payments, and role-based access. Web + mobile.",
     icon: "M12 2L2 12h3v8h14v-8h3L12 2z",
     status: "Production",
-    url: "#",
+    url: "/coming-soon?name=Mosquemu",
     tech: ["Next.js 14", "React Native", "Supabase"],
   },
   {
@@ -77,7 +77,7 @@ const products = [
     description: "Marketplace where producers and engineers connect. Blockchain copyright protection and automatic royalty splits.",
     icon: "M9 18V5l12-2v13M9 9l12-2M9 18a3 3 0 11-6 0 3 3 0 016 0zm12-3a3 3 0 11-6 0 3 3 0 016 0z",
     status: "25%",
-    url: "#",
+    url: "/coming-soon?name=MusicVerse",
     tech: ["Next.js 14", "Supabase", "Polygon", "R2"],
   },
   {
@@ -86,7 +86,7 @@ const products = [
     description: "Automotive platform with B2C vehicle marketplace and B2B fleet management. Smart marketing tools.",
     icon: "M5 11l1.5-4.5h11L19 11M5 11h14v6H5v-6z",
     status: "70%",
-    url: "#",
+    url: "/coming-soon?name=Automotive+Ecosystem",
     tech: ["Python", "FastAPI", "Next.js"],
   },
   {
@@ -95,7 +95,7 @@ const products = [
     description: "Voice cloning and neural streaming. Chrome extension + Desktop + Mobile. Real-time synthesis.",
     icon: "M12 14a3 3 0 003-3V5a3 3 0 00-6 0v6a3 3 0 003 3z M19 11a7 7 0 01-14 0M12 18v4",
     status: "100%",
-    url: "#",
+    url: "/coming-soon?name=Live+Speak",
     tech: ["Next.js", "Electron", "React Native"],
   },
   {
@@ -104,7 +104,7 @@ const products = [
     description: "Enterprise-grade CRM with content management, outreach automation, and segmentation engine.",
     icon: "M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z",
     status: "Concept",
-    url: "#",
+    url: "/coming-soon?name=Lumina+Core",
     tech: ["Next.js", "Supabase", "PostgreSQL"],
   },
   {
@@ -113,7 +113,7 @@ const products = [
     description: "Automated life logging app. Smart journaling with context awareness and pattern recognition.",
     icon: "M6 2v20l6-4 6 4V2H6z",
     status: "20%",
-    url: "#",
+    url: "/coming-soon?name=Auto+Life+Diary",
     tech: ["Python", "Flask", "SQLite"],
   },
   {
@@ -122,7 +122,7 @@ const products = [
     description: "Bilingual EN/ES local platform for Aurora, Colorado. Events, jobs, businesses, real estate, multicultural food, and community forum.",
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM12 6v6l4 2",
     status: "Live",
-    url: "#",
+    url: "/coming-soon?name=AuroraToday",
     tech: ["Next.js", "Supabase", "FastAPI"],
   },
   {
@@ -131,7 +131,7 @@ const products = [
     description: "Modern artisan bakery with ASEAN heritage and Colorado flair. Ghost-kitchen + pop-up model with smart ordering and loyalty program.",
     icon: "M5 11h14v2H5v-2zM7 13v6h10v-6M9 6h6v3H9V6z",
     status: "70%",
-    url: "#",
+    url: "/coming-soon?name=ASEAN+Bakery",
     tech: ["Next.js 14", "Supabase", "Stripe"],
   },
   {
@@ -140,7 +140,7 @@ const products = [
     description: "Premier social-sports hub with padel, pickleball, food court, VIP billiards, karaoke, and golf simulators. B2B lead generation engine included.",
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM12 6v6l4 2",
     status: "80%",
-    url: "#",
+    url: "/coming-soon?name=ASEAN+Sportainment",
     tech: ["Next.js", "FastAPI", "Supabase"],
   },
   {
@@ -149,7 +149,7 @@ const products = [
     description: "Top-up PayPal, withdraw to bank, and pay CC-only subscriptions without a credit card. QRIS, VA, and e-wallet payments accepted.",
     icon: "M3 10h18M3 14h18M7 6h10v12H7V6z",
     status: "Concept",
-    url: "#",
+    url: "/coming-soon?name=PayBridge",
     tech: ["Next.js", "PayPal API", "Xendit"],
   },
   {
@@ -158,7 +158,7 @@ const products = [
     description: "Gmail-like self-hosted webmail with Postfix, Dovecot, and Next.js. Full IMAP/SMTP support with dark mode and label management.",
     icon: "M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8M3 8a2 2 0 012-2h14a2 2 0 012 2",
     status: "90%",
-    url: "#",
+    url: "/coming-soon?name=Lumina+Webmail",
     tech: ["Next.js", "Postfix", "Dovecot"],
   },
 ];
@@ -642,6 +642,60 @@ function FAQ() {
   );
 }
 
+function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setSubmitted(true);
+    }
+  };
+
+  return (
+    <section className="relative py-24 border-y border-[#292d30]">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#292d30] bg-[#0a0a0c] text-xs text-[#a1a4a5] mb-4">
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#9281f7]" />
+          <span className="font-mono-label">Stay in the loop</span>
+        </div>
+        <h2 className="text-3xl sm:text-5xl font-serif-display tracking-tight mb-4 text-[#fcfdff]">
+          Get product <span className="text-iris">updates</span>
+        </h2>
+        <p className="text-[#a1a4a5] text-sm sm:text-base max-w-xl mx-auto mb-8">
+          New launches, release notes, and ecosystem insights. No spam, unsubscribe anytime.
+        </p>
+        {submitted ? (
+          <div className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-[#1f4d38] bg-[#10291f] text-sm text-[#3ad389]">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            Thanks for subscribing!
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              className="w-full sm:flex-1 px-4 py-3 rounded-lg border border-[#292d30] bg-[#0a0a0c] text-sm text-white placeholder:text-[#464a4d] focus:outline-none focus:border-iris transition-colors"
+            />
+            <button type="submit" className="btn-white-pill inline-flex items-center gap-2 whitespace-nowrap">
+              Subscribe
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </form>
+        )}
+      </div>
+    </section>
+  );
+}
+
 function CTA() {
   return (
     <section className="relative py-24">
@@ -698,6 +752,7 @@ export default function Home() {
       <TechStack />
       <Testimonials />
       <FAQ />
+      <Newsletter />
       <CTA />
       <Footer />
     </main>

@@ -66,7 +66,7 @@ const products: Product[] = [
     status: "High",
     statusLabel: "90% Complete",
     completion: 90,
-    url: "#",
+    url: "/coming-soon?name=MarktBit",
     deploy: "Vercel + Railway",
     icon: "M3 3v18h18M7 14l4-4 4 4 6-6",
     accent: "from-amber-500 to-orange-600",
@@ -88,7 +88,7 @@ const products: Product[] = [
     status: "High",
     statusLabel: "97% Complete",
     completion: 97,
-    url: "#",
+    url: "/coming-soon?name=Chrome+Extension+Factory",
     deploy: "Chrome Web Store",
     icon: "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M9 5h6a2 2 0 012 2v10a2 2 0 01-2 2H9a2 2 0 01-2-2V7a2 2 0 012-2z",
     accent: "from-green-500 to-emerald-600",
@@ -111,7 +111,7 @@ const products: Product[] = [
     status: "Mid",
     statusLabel: "DB Ready, 25% UI",
     completion: 25,
-    url: "#",
+    url: "/coming-soon?name=MusicVerse",
     deploy: "Vercel + Supabase",
     icon: "M9 18V5l12-2v13M9 9l12-2M9 18a3 3 0 11-6 0 3 3 0 016 0zm12-3a3 3 0 11-6 0 3 3 0 016 0z",
     accent: "from-purple-500 to-fuchsia-600",
@@ -134,7 +134,7 @@ const products: Product[] = [
     status: "Production Ready",
     statusLabel: "Production Ready",
     completion: 95,
-    url: "#",
+    url: "/coming-soon?name=Mosquemu",
     deploy: "Vercel + EAS Build",
     icon: "M12 2L2 12h3v8h14v-8h3L12 2z",
     accent: "from-teal-500 to-cyan-600",
@@ -156,7 +156,7 @@ const products: Product[] = [
     status: "Mid",
     statusLabel: "70% Complete",
     completion: 70,
-    url: "#",
+    url: "/coming-soon?name=Automotive+Ecosystem",
     deploy: "VPS",
     icon: "M5 11l1.5-4.5h11L19 11M5 11h14v6H5v-6z",
     accent: "from-red-500 to-rose-600",
@@ -178,7 +178,7 @@ const products: Product[] = [
     status: "Deployed",
     statusLabel: "100% Complete",
     completion: 100,
-    url: "#",
+    url: "/coming-soon?name=Live+Speak",
     deploy: "TBD",
     icon: "M12 14a3 3 0 003-3V5a3 3 0 00-6 0v6a3 3 0 003 3z M19 11a7 7 0 01-14 0M12 18v4",
     accent: "from-blue-500 to-indigo-600",
@@ -200,7 +200,7 @@ const products: Product[] = [
     status: "Concept",
     statusLabel: "In Development",
     completion: 0,
-    url: "#",
+    url: "/coming-soon?name=Lumina+Core",
     deploy: "Vercel",
     icon: "M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z",
     accent: "from-brand-500 to-purple-600",
@@ -222,7 +222,7 @@ const products: Product[] = [
     status: "Early",
     statusLabel: "Early Stage",
     completion: 20,
-    url: "#",
+    url: "/coming-soon?name=Auto+Life+Diary",
     deploy: "TBD",
     icon: "M6 2v20l6-4 6 4V2H6z",
     accent: "from-pink-500 to-rose-600",
@@ -245,7 +245,7 @@ const products: Product[] = [
     status: "Deployed",
     statusLabel: "Live",
     completion: 100,
-    url: "#",
+    url: "/coming-soon?name=AuroraToday",
     deploy: "VPS",
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM12 6v6l4 2",
     accent: "from-cyan-500 to-blue-600",
@@ -268,7 +268,7 @@ const products: Product[] = [
     status: "Mid",
     statusLabel: "70% Complete",
     completion: 70,
-    url: "#",
+    url: "/coming-soon?name=ASEAN+Bakery",
     deploy: "VPS",
     icon: "M5 11h14v2H5v-2zM7 13v6h10v-6M9 6h6v3H9V6z",
     accent: "from-amber-500 to-yellow-600",
@@ -291,7 +291,7 @@ const products: Product[] = [
     status: "High",
     statusLabel: "80% Complete",
     completion: 80,
-    url: "#",
+    url: "/coming-soon?name=ASEAN+Sportainment",
     deploy: "VPS",
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM12 6v6l4 2",
     accent: "from-green-500 to-teal-600",
@@ -313,7 +313,7 @@ const products: Product[] = [
     status: "Concept",
     statusLabel: "In Development",
     completion: 0,
-    url: "#",
+    url: "/coming-soon?name=PayBridge",
     deploy: "Vercel",
     icon: "M3 10h18M3 14h18M7 6h10v12H7V6z",
     accent: "from-blue-500 to-indigo-600",
@@ -336,7 +336,7 @@ const products: Product[] = [
     status: "High",
     statusLabel: "90% Complete",
     completion: 90,
-    url: "#",
+    url: "/coming-soon?name=Lumina+Webmail",
     deploy: "VPS",
     icon: "M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8M3 8a2 2 0 012-2h14a2 2 0 012 2",
     accent: "from-slate-500 to-gray-600",
@@ -428,7 +428,12 @@ function ProductCard({ product }: { product: Product }) {
           {product.deploy}
         </div>
         {product.url !== "#" && (
-          <a href={product.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-white">
+          <a
+            href={product.url}
+            target={product.url.startsWith("/") ? undefined : "_blank"}
+            rel={product.url.startsWith("/") ? undefined : "noopener noreferrer"}
+            className="flex items-center gap-1 text-white"
+          >
             Visit
             <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -61,7 +61,7 @@ const projects = [
       "Real-time signal dashboard for crypto and global stocks. Get alerts, track trends, and make informed decisions.",
     tech: ["Real-Time Dashboard", "Multi-Market", "Alert System"],
     status: "90% Complete",
-    url: "#",
+    url: "/coming-soon?name=MarktBit",
   },
   {
     name: "Chrome Extension Factory",
@@ -69,7 +69,7 @@ const projects = [
       "300+ browser extensions to boost productivity, research, writing, and learning. Tools for students, professionals, and creators.",
     tech: ["300+ Products", "8 Categories", "Productivity Tools"],
     status: "97% Complete",
-    url: "#",
+    url: "/coming-soon?name=Chrome+Extension+Factory",
   },
   {
     name: "Lumina MusicVerse",
@@ -77,7 +77,7 @@ const projects = [
       "Music marketplace where producers and engineers connect. Protect your copyright, split royalties automatically, and get paid securely.",
     tech: ["Marketplace", "Blockchain Copyright", "Royalty System"],
     status: "In Progress",
-    url: "#",
+    url: "/coming-soon?name=MusicVerse",
   },
   {
     name: "Mosquemu",
@@ -85,7 +85,7 @@ const projects = [
       "Complete mosque management platform. Prayer schedules, events, and announcements — all in one place. Available in 14 languages.",
     tech: ["Web + Mobile", "Multi-Language", "Prayer Schedule"],
     status: "Production Ready",
-    url: "#",
+    url: "/coming-soon?name=Mosquemu",
   },
   {
     name: "Automotive Ecosystem",
@@ -93,7 +93,7 @@ const projects = [
       "Automotive accessories marketplace with custom modification tools for workshops. Manage inventory and reach more customers.",
     tech: ["Accessories Marketplace", "Customization Tools", "Workshop Tools"],
     status: "70% Complete",
-    url: "#",
+    url: "/coming-soon?name=Automotive+Ecosystem",
   },
   {
     name: "Live Speak",
@@ -101,7 +101,7 @@ const projects = [
       "Voice cloning and streaming platform. Create realistic voice clones and stream in real-time across desktop, mobile, and browser.",
     tech: ["Voice Cloning", "Desktop + Mobile", "Real-Time Streaming"],
     status: "100% Complete",
-    url: "#",
+    url: "/coming-soon?name=Live+Speak",
   },
   {
     name: "Lumina Core",
@@ -109,7 +109,7 @@ const projects = [
       "Enterprise CRM platform to manage customers, automate outreach, and grow your business.",
     tech: ["CRM", "Content Management", "Automation"],
     status: "In Development",
-    url: "#",
+    url: "/coming-soon?name=Lumina+Core",
   },
   {
     name: "Auto Life Diary",
@@ -117,7 +117,7 @@ const projects = [
       "Smart journaling app that automatically captures and organizes your daily activities. Your life, documented effortlessly.",
     tech: ["Smart Journaling", "Auto-Capture", "Pattern Recognition"],
     status: "Early Stage",
-    url: "#",
+    url: "/coming-soon?name=Auto+Life+Diary",
   },
   {
     name: "AuroraToday",
@@ -125,7 +125,7 @@ const projects = [
       "Bilingual EN/ES local platform for Aurora, Colorado. Events, jobs, businesses, real estate, multicultural food, and community forum.",
     tech: ["Bilingual EN/ES", "Local News", "Job Board"],
     status: "Deployed",
-    url: "#",
+    url: "/coming-soon?name=AuroraToday",
   },
   {
     name: "ASEAN Bakery",
@@ -133,7 +133,7 @@ const projects = [
       "Modern artisan bakery with ASEAN heritage and Colorado flair. Ghost-kitchen + pop-up model with smart ordering and loyalty program.",
     tech: ["Smart Ordering", "Loyalty Program", "Supabase"],
     status: "70% Complete",
-    url: "#",
+    url: "/coming-soon?name=ASEAN+Bakery",
   },
   {
     name: "ASEAN Sportainment",
@@ -141,7 +141,7 @@ const projects = [
       "Premier social-sports hub with padel, pickleball, food court, VIP billiards, karaoke, and golf simulators. B2B lead generation engine included.",
     tech: ["Booking System", "B2B Lead Gen", "Membership"],
     status: "80% Complete",
-    url: "#",
+    url: "/coming-soon?name=ASEAN+Sportainment",
   },
   {
     name: "PayBridge",
@@ -149,7 +149,7 @@ const projects = [
       "Top-up PayPal, withdraw to bank, and pay CC-only subscriptions without a credit card. QRIS, VA, and e-wallet payments accepted.",
     tech: ["PayPal API", "QRIS", "E-Wallet"],
     status: "In Development",
-    url: "#",
+    url: "/coming-soon?name=PayBridge",
   },
   {
     name: "Lumina Webmail",
@@ -157,7 +157,7 @@ const projects = [
       "Gmail-like self-hosted webmail with Postfix, Dovecot, and Next.js. Full IMAP/SMTP support with dark mode and label management.",
     tech: ["Postfix", "Dovecot", "IMAP/SMTP"],
     status: "90% Complete",
-    url: "#",
+    url: "/coming-soon?name=Lumina+Webmail",
   },
 ];
 
