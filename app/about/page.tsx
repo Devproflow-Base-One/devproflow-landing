@@ -61,7 +61,7 @@ const projects = [
       "Real-time signal dashboard for crypto and global stocks. Get alerts, track trends, and make informed decisions.",
     tech: ["Real-Time Dashboard", "Multi-Market", "Alert System"],
     status: "90% Complete",
-    url: "https://marktbit.app",
+    url: "https://marktbit.devproflow.com",
   },
   {
     name: "Chrome Extension Factory",
@@ -133,7 +133,7 @@ const projects = [
       "Modern artisan bakery with ASEAN heritage and Colorado flair. Ghost-kitchen + pop-up model with smart ordering and loyalty program.",
     tech: ["Smart Ordering", "Loyalty Program", "Supabase"],
     status: "70% Complete",
-    url: "https://abc-colorado.com",
+    url: "https://asean-bakery.vercel.app",
   },
   {
     name: "ASEAN Sportainment",
@@ -141,7 +141,7 @@ const projects = [
       "Premier social-sports hub with padel, pickleball, food court, VIP billiards, karaoke, and golf simulators. B2B lead generation engine included.",
     tech: ["Booking System", "B2B Lead Gen", "Membership"],
     status: "80% Complete",
-    url: "https://as-spo.com",
+    url: "https://asean-sportainment.devproflow.com",
   },
   {
     name: "PayBridge",

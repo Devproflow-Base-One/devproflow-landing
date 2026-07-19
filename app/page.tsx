@@ -50,7 +50,7 @@ const products = [
     description: "Hybrid signal dashboard with smart analysis. Real-time crypto + global stock signals.",
     icon: "M3 3v18h18M7 14l4-4 4 4 6-6",
     status: "90%",
-    url: "https://marktbit.app",
+    url: "https://marktbit.devproflow.com",
     tech: ["Next.js 15", "Node.js", "PostgreSQL"],
   },
   {
@@ -131,7 +131,7 @@ const products = [
     description: "Modern artisan bakery with ASEAN heritage and Colorado flair. Ghost-kitchen + pop-up model with smart ordering and loyalty program.",
     icon: "M5 11h14v2H5v-2zM7 13v6h10v-6M9 6h6v3H9V6z",
     status: "70%",
-    url: "https://abc-colorado.com",
+    url: "https://asean-bakery.vercel.app",
     tech: ["Next.js 14", "Supabase", "Stripe"],
   },
   {
@@ -140,7 +140,7 @@ const products = [
     description: "Premier social-sports hub with padel, pickleball, food court, VIP billiards, karaoke, and golf simulators. B2B lead generation engine included.",
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM12 6v6l4 2",
     status: "80%",
-    url: "https://as-spo.com",
+    url: "https://asean-sportainment.devproflow.com",
     tech: ["Next.js", "FastAPI", "Supabase"],
   },
   {
