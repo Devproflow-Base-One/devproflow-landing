@@ -4,6 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "DevProFlow · Lumina Ecosystem",
+  icons: {
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+    shortcut: '/favicon.svg',
+  },
   description: "Pure-black SaaS studio shipping 12+ products, 300+ Chrome extensions, and zero-cost AI automations.",
   keywords: [
     "DevProFlow",

@@ -96,19 +96,67 @@ const projects = [
     url: "#",
   },
   {
-    name: "Lumina Browser",
-    description:
-      "Desktop browser with smart automation. Navigate, fill forms, and capture screenshots effortlessly.",
-    tech: ["Desktop App", "Smart Automation", "Cross-Platform"],
-    status: "95% Complete",
-    url: "#",
-  },
-  {
     name: "Live Speak",
     description:
       "Voice cloning and streaming platform. Create realistic voice clones and stream in real-time across desktop, mobile, and browser.",
     tech: ["Voice Cloning", "Desktop + Mobile", "Real-Time Streaming"],
     status: "100% Complete",
+    url: "#",
+  },
+  {
+    name: "Lumina Core",
+    description:
+      "Enterprise CRM platform to manage customers, automate outreach, and grow your business.",
+    tech: ["CRM", "Content Management", "Automation"],
+    status: "In Development",
+    url: "#",
+  },
+  {
+    name: "Auto Life Diary",
+    description:
+      "Smart journaling app that automatically captures and organizes your daily activities. Your life, documented effortlessly.",
+    tech: ["Smart Journaling", "Auto-Capture", "Pattern Recognition"],
+    status: "Early Stage",
+    url: "#",
+  },
+  {
+    name: "AuroraToday",
+    description:
+      "Bilingual EN/ES local platform for Aurora, Colorado. Events, jobs, businesses, real estate, multicultural food, and community forum.",
+    tech: ["Bilingual EN/ES", "Local News", "Job Board"],
+    status: "Deployed",
+    url: "#",
+  },
+  {
+    name: "ASEAN Bakery",
+    description:
+      "Modern artisan bakery with ASEAN heritage and Colorado flair. Ghost-kitchen + pop-up model with smart ordering and loyalty program.",
+    tech: ["Smart Ordering", "Loyalty Program", "Supabase"],
+    status: "70% Complete",
+    url: "#",
+  },
+  {
+    name: "ASEAN Sportainment",
+    description:
+      "Premier social-sports hub with padel, pickleball, food court, VIP billiards, karaoke, and golf simulators. B2B lead generation engine included.",
+    tech: ["Booking System", "B2B Lead Gen", "Membership"],
+    status: "80% Complete",
+    url: "#",
+  },
+  {
+    name: "PayBridge",
+    description:
+      "Top-up PayPal, withdraw to bank, and pay CC-only subscriptions without a credit card. QRIS, VA, and e-wallet payments accepted.",
+    tech: ["PayPal API", "QRIS", "E-Wallet"],
+    status: "In Development",
+    url: "#",
+  },
+  {
+    name: "Lumina Webmail",
+    description:
+      "Gmail-like self-hosted webmail with Postfix, Dovecot, and Next.js. Full IMAP/SMTP support with dark mode and label management.",
+    tech: ["Postfix", "Dovecot", "IMAP/SMTP"],
+    status: "90% Complete",
     url: "#",
   },
 ];
