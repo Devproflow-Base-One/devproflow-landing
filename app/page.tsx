@@ -315,9 +315,9 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 spotlight-halo opacity-30" />
-      <div className="absolute inset-0 hero-grid opacity-25" aria-hidden />
+      <div className="absolute inset-0 hero-grid opacity-15" aria-hidden />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
-      <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
+      <div className="absolute inset-0 noise-overlay opacity-20" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* 3D Iridescent Hexagon Icon */}
         <div className="flex justify-center mb-8 animate-fade-in">
