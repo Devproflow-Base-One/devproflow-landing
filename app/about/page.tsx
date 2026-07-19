@@ -267,7 +267,7 @@ export default function AboutPage() {
         <Section id="capabilities" title="Capabilities" description="What we bring across web, mobile, cloud, and security.">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {skills.map((skill) => (
-              <div key={skill.category} className="rounded-lg border border-[#292d30] bg-[#0a0a0c] p-5">
+              <div key={skill.category} className="p-5">
                 <h3 className="text-sm font-semibold text-iris mb-3">{skill.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item) => (
