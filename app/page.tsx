@@ -315,7 +315,9 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 spotlight-halo opacity-30" />
+      <div className="absolute inset-0 hero-grid opacity-15" aria-hidden />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
+      <div className="absolute inset-0 noise-overlay opacity-20" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* 3D Iridescent Hexagon Icon */}
         <div className="flex justify-center mb-8 animate-fade-in">
@@ -331,7 +333,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#292d30] bg-[#0a0a0c]/60 backdrop-blur-sm text-xs text-[#a1a4a5] mb-8 animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#292d30] bg-[#050505]/70 backdrop-blur-md text-xs text-[#a1a4a5] mb-8 animate-fade-in">
           <span className="inline-block w-2 h-2 rounded-full bg-[#3ad389] animate-pulse" />
           <span className="font-mono-label">ecosystem.live</span>
           <span className="text-[#464a4d]">·</span>
@@ -350,14 +352,16 @@ function Hero() {
           </a>
           <a href="/about" className="btn-ghost inline-flex items-center gap-2">About Lumina Labs</a>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
-              <div className="text-xs text-[#a1a4a5] mt-1">{stat.label}</div>
-              <div className="text-[10px] text-[#464a4d] mt-0.5 font-mono-label">{stat.sub}</div>
-            </div>
-          ))}
+        <div className="mt-16 max-w-4xl mx-auto border-t border-[#1a1a1a] pt-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-left sm:text-center">
+                <div className="text-3xl font-semibold text-white tracking-tight">{stat.value}</div>
+                <div className="text-xs text-[#a1a4a5] mt-1 uppercase tracking-[0.15em]">{stat.label}</div>
+                <div className="text-[10px] text-[#5c5f63] mt-0.5 font-mono-label">{stat.sub}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
