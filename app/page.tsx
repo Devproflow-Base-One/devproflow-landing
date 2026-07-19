@@ -338,7 +338,7 @@ function Hero() {
 
             {/* Main glass sphere — solid black glass */}
             <div
-              className="relative w-24 h-24 rounded-full overflow-hidden"
+              className="relative w-20 h-20 rounded-full overflow-hidden"
               style={{
                 background: 'radial-gradient(circle at 30% 30%, rgba(40,40,45,0.9) 0%, rgba(10,10,12,0.95) 30%, #000000 70%)',
                 backdropFilter: 'blur(20px) saturate(180%)',
