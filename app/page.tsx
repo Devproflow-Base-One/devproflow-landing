@@ -285,8 +285,8 @@ function Nav() {
 
   return (
     <nav
-      className={`fixed top-2 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 backdrop-blur-xl border-b border-[#292d30] rounded-xl max-w-[98%] mx-auto" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-black/80 backdrop-blur-xl border-b border-[#292d30]" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -313,158 +313,38 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 spotlight-halo opacity-30" />
       <div className="absolute inset-0 hero-grid opacity-25" aria-hidden />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-[#9281f7]/8 blur-[150px] animate-glow-pulse" />
       <div className="absolute inset-0 noise-overlay opacity-30" aria-hidden />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* 3D Glass Diamond/Crystal — faceted with light rays */}
-        <div className="flex justify-center mb-8 animate-fade-in" style={{ perspective: '600px' }}>
-          <div className="relative animate-float-3d" style={{ transformStyle: 'preserve-3d' }}>
-            {/* Outer atmospheric glow */}
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[#9281f7]/25 to-[#3b9eff]/15 blur-2xl animate-glow-pulse" />
-
-            {/* Rotating conic light ring behind crystal */}
-            <div
-              className="absolute inset-0 rounded-full animate-spin"
-              style={{
-                animationDuration: '6s',
-                background: 'conic-gradient(from 0deg, #9281f7 0%, transparent 25%, #3b9eff 50%, transparent 75%, #9281f7 100%)',
-                opacity: 0.4,
-                filter: 'blur(6px)',
-              }}
-            />
-
-            {/* Diamond shape using clip-path */}
-            <div
-              className="relative w-20 h-20"
-              style={{
-                clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
-                background: 'radial-gradient(circle at 35% 25%, rgba(50,50,55,0.9) 0%, rgba(10,10,12,0.95) 40%, #000000 80%)',
-                backdropFilter: 'blur(20px) saturate(180%)',
-                filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.15))',
-              }}
-            >
-              {/* Facet line 1 — top-left to center */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
-                  background: 'linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.08) 50%, transparent 70%)',
-                }}
-              />
-
-              {/* Facet line 2 — vertical center */}
-              <div
-                className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-white/20 via-white/5 to-transparent"
-              />
-
-              {/* Facet line 3 — horizontal upper */}
-              <div
-                className="absolute top-[38%] left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
-              />
-
-              {/* Facet line 4 — left diagonal */}
-              <div
-                className="absolute top-0 left-0 w-full h-full"
-                style={{
-                  background: 'linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%)',
-                }}
-              />
-
-              {/* Facet line 5 — right diagonal */}
-              <div
-                className="absolute top-0 left-0 w-full h-full"
-                style={{
-                  background: 'linear-gradient(-45deg, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%)',
-                }}
-              />
-
-              {/* Top facet highlight — brightest point */}
-              <div
-                className="absolute top-1 left-1/2 -translate-x-1/2 w-6 h-4"
-                style={{
-                  background: 'radial-gradient(ellipse, rgba(255,255,255,0.5) 0%, transparent 70%)',
-                  filter: 'blur(2px)',
-                }}
-              />
-
-              {/* Sharp catch light — top */}
-              <div
-                className="absolute top-2 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-white/80"
-                style={{ filter: 'blur(0.5px)' }}
-              />
-
-              {/* Left facet glow */}
-              <div
-                className="absolute top-[20%] left-[5%] w-8 h-12"
-                style={{
-                  background: 'radial-gradient(ellipse, rgba(146,129,247,0.2) 0%, transparent 70%)',
-                  filter: 'blur(3px)',
-                }}
-              />
-
-              {/* Right facet glow */}
-              <div
-                className="absolute top-[20%] right-[5%] w-8 h-12"
-                style={{
-                  background: 'radial-gradient(ellipse, rgba(59,158,255,0.15) 0%, transparent 70%)',
-                  filter: 'blur(3px)',
-                }}
-              />
-
-              {/* Bottom facet inner glow (pulsing) */}
-              <div
-                className="absolute bottom-[10%] left-1/2 -translate-x-1/2 w-10 h-8 animate-glow-pulse"
-                style={{
-                  background: 'radial-gradient(ellipse, rgba(146,129,247,0.3) 0%, rgba(59,158,255,0.15) 50%, transparent 100%)',
-                  filter: 'blur(4px)',
-                }}
-              />
-
-              {/* Shimmer sweep — diagonal light pass */}
-              <div
-                className="absolute inset-0 animate-pulse"
-                style={{
-                  clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
-                  background: 'linear-gradient(135deg, transparent 35%, rgba(255,255,255,0.1) 50%, transparent 65%)',
-                  animationDuration: '4s',
-                }}
-              />
-
-              {/* Light ray 1 — from top */}
-              <div
-                className="absolute -top-6 left-1/2 -translate-x-1/2 w-px h-6"
-                style={{
-                  background: 'linear-gradient(to bottom, transparent, rgba(255,255,255,0.15))',
-                }}
-              />
-
-              {/* Light ray 2 — from bottom-left */}
-              <div
-                className="absolute -bottom-4 left-[20%] w-px h-4"
-                style={{
-                  background: 'linear-gradient(to top, transparent, rgba(146,129,247,0.1))',
-                  transform: 'rotate(-20deg)',
-                }}
-              />
-
-              {/* Light ray 3 — from bottom-right */}
-              <div
-                className="absolute -bottom-4 right-[20%] w-px h-4"
-                style={{
-                  background: 'linear-gradient(to top, transparent, rgba(59,158,255,0.1))',
-                  transform: 'rotate(20deg)',
-                }}
-              />
+        {/* Resend-style 3D Black Glass Cube */}
+        <div className="flex justify-center mb-8 animate-fade-in">
+          <div className="relative w-20 h-20 animate-float-3d">
+            {/* Subtle outer glow */}
+            <div className="absolute inset-0 bg-[#9281f7]/5 rounded-lg blur-2xl animate-glow-pulse" />
+            {/* Main cube - solid black with glass blur */}
+            <div className="absolute inset-0 bg-black/90 rounded-lg backdrop-blur-[25px] border border-white/[0.06] overflow-hidden">
+              {/* Noise texture overlay */}
+              <div className="absolute inset-0 noise-overlay opacity-[0.05]" />
+              {/* Top edge highlight */}
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
+              {/* Bottom edge highlight */}
+              <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#292d30] to-transparent" />
+              {/* Left edge highlight */}
+              <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
+              {/* Right edge highlight */}
+              <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-[#292d30] to-transparent" />
+              {/* Inner glass reflection */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] via-transparent to-white/[0.04] rounded-lg" />
+              {/* Center icon - stylized D (Resend-style single path) */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg className="w-8 h-8 relative z-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4C18.4183 4 22 7.58172 22 12C22 16.4183 18.4183 20 14 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4H14ZM14 7.5C16.4853 7.5 18.5 9.51472 18.5 12C18.5 14.4853 16.4853 16.5 14 16.5H8.5V7.5H14Z" fill="#f0f0f0" />
+                </svg>
+              </div>
             </div>
-
-            {/* Ground shadow — ellipse below crystal */}
-            <div
-              className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-14 h-3 rounded-full bg-black/70"
-              style={{ filter: 'blur(8px)' }}
-            />
           </div>
         </div>
 
