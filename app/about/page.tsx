@@ -61,7 +61,7 @@ const projects = [
       "Real-time signal dashboard for crypto and global stocks. Get alerts, track trends, and make informed decisions.",
     tech: ["Real-Time Dashboard", "Multi-Market", "Alert System"],
     status: "90% Complete",
-    url: "/coming-soon?name=MarktBit",
+    url: "https://marktbit.app",
   },
   {
     name: "Chrome Extension Factory",
@@ -85,7 +85,7 @@ const projects = [
       "Complete mosque management platform. Prayer schedules, events, and announcements — all in one place. Available in 14 languages.",
     tech: ["Web + Mobile", "Multi-Language", "Prayer Schedule"],
     status: "Production Ready",
-    url: "/coming-soon?name=Mosquemu",
+    url: "https://mosquemu.devproflow.com",
   },
   {
     name: "Automotive Ecosystem",
@@ -125,7 +125,7 @@ const projects = [
       "Bilingual EN/ES local platform for Aurora, Colorado. Events, jobs, businesses, real estate, multicultural food, and community forum.",
     tech: ["Bilingual EN/ES", "Local News", "Job Board"],
     status: "Deployed",
-    url: "/coming-soon?name=AuroraToday",
+    url: "https://auroratoday.devproflow.com",
   },
   {
     name: "ASEAN Bakery",
@@ -133,7 +133,7 @@ const projects = [
       "Modern artisan bakery with ASEAN heritage and Colorado flair. Ghost-kitchen + pop-up model with smart ordering and loyalty program.",
     tech: ["Smart Ordering", "Loyalty Program", "Supabase"],
     status: "70% Complete",
-    url: "/coming-soon?name=ASEAN+Bakery",
+    url: "https://abc-colorado.com",
   },
   {
     name: "ASEAN Sportainment",
@@ -141,7 +141,7 @@ const projects = [
       "Premier social-sports hub with padel, pickleball, food court, VIP billiards, karaoke, and golf simulators. B2B lead generation engine included.",
     tech: ["Booking System", "B2B Lead Gen", "Membership"],
     status: "80% Complete",
-    url: "/coming-soon?name=ASEAN+Sportainment",
+    url: "https://as-spo.com",
   },
   {
     name: "PayBridge",
@@ -157,7 +157,7 @@ const projects = [
       "Gmail-like self-hosted webmail with Postfix, Dovecot, and Next.js. Full IMAP/SMTP support with dark mode and label management.",
     tech: ["Postfix", "Dovecot", "IMAP/SMTP"],
     status: "90% Complete",
-    url: "/coming-soon?name=Lumina+Webmail",
+    url: "https://lumina-mail.devproflow.com",
   },
 ];
 
